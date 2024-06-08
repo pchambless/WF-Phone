@@ -1,4 +1,10 @@
 export default {
+async select () {
+	await prod_List.run()
+	await prodType_select.run()
+	await task_List.run()
+	await jsTabs.resetTabs()
+},
 editModeRun: async () => {
 	const mode = jsnProdType.formData.editMode;
 	switch(mode) {

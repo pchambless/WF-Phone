@@ -294,7 +294,7 @@
         {"key": "schema.__root_schema__.children.customField1.onOptionChange"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 56,
+    "bottomRow": 59,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "{{tbl_Tasks.selectedRow.task_nm}}",
