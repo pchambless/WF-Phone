@@ -22,7 +22,7 @@
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,
     "version": 1,
-    "onDropdownOpen": "{{dd_Prod.run()}}",
+    "onDropdownOpen": "{{prod_dd.run()}}",
     "tags": [
         "Suggested",
         "Select"
@@ -50,7 +50,7 @@
         {"key": "onDropdownOpen"}
     ],
     "labelPosition": "Left",
-    "sourceData": "{{dd_Prod.data}}",
+    "sourceData": "{{prod_dd.data}}",
     "key": "bceea8jr25",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
@@ -67,6 +67,6 @@
     "originalTopRow": 19.999999999997822,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{rcpeIngr_list.run()}}",
+    "onOptionChange": "{{jsRecipe.select()\njsProdType.select()}}",
     "minDynamicHeight": 4
 }

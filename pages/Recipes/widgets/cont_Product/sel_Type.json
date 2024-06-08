@@ -45,7 +45,7 @@
     "parentColumnSpace": 6.53125,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Left",
-    "sourceData": "{{dd_prodType.data}}",
+    "sourceData": "{{prodType_dd.data}}",
     "key": "bceea8jr25",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
@@ -62,6 +62,6 @@
     "originalTopRow": 19.999999999997822,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{prod_list.run()\ntaskList.run()}}",
+    "onOptionChange": "{{jsProdType.select()}}",
     "minDynamicHeight": 4
 }

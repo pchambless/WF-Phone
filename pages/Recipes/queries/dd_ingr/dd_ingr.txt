@@ -1,3 +1,0 @@
-SELECT id value, name label
-FROM ingredients
-where ingredient_type_id = {{sel_Type.selectedOptionValue}};
