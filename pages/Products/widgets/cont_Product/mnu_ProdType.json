@@ -1,0 +1,83 @@
+{
+    "needsErrorInfo": false,
+    "isCompact": false,
+    "boxShadow": "none",
+    "mobileBottomRow": 4,
+    "widgetName": "mnu_ProdType",
+    "dynamicPropertyPathList": [{"key": "menuItems.menuItemaqa2kfn2k0.onClick"}],
+    "displayName": "Menu button",
+    "iconSVG": "/static/media/icon.33a4057faa7212849fa6ff1f15f2da0f.svg",
+    "topRow": 4,
+    "bottomRow": 8,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 62,
+    "animateLoading": true,
+    "parentColumnSpace": 6.42431640625,
+    "dynamicTriggerPathList": [{"key": "menuItems.menuItemaqa2kfn2k0.onClick"}],
+    "leftColumn": 12,
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "isDisabled": false,
+    "key": "rirv7fdgvx",
+    "isDeprecated": false,
+    "rightColumn": 47,
+    "thumbnailSVG": "/static/media/thumbnail.57aa4a1b6aaab3ade6ce3bc3a1177531.svg",
+    "menuVariant": "PRIMARY",
+    "widgetId": "y4fx5zntgs",
+    "onCanvasUI": {
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "disableParentSelection": false,
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    },
+    "menuItems": {
+        "menuItemadoyry58gh": {
+            "widgetId": "4m4tnlymnw",
+            "index": 2,
+            "id": "menuItemadoyry58gh",
+            "label": "New Product",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItemaqa2kfn2k0": {
+            "onClick": "{{showModal('mdl_Tasks')}}",
+            "widgetId": "8lwa5w6o6t",
+            "index": 3,
+            "id": "menuItemaqa2kfn2k0",
+            "label": "Type Task List",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItem1": {
+            "widgetId": "",
+            "index": 0,
+            "label": "Add Type",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem2": {
+            "widgetId": "",
+            "index": 1,
+            "label": "Edit Type",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "isVisible": true,
+    "label": "Actions",
+    "version": 1,
+    "parentId": "u6axqxl7ts",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 0,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 46,
+    "menuItemsSource": "STATIC",
+    "menuColor": "#86efac",
+    "placement": "CENTER"
+}

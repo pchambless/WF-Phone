@@ -1,0 +1,4 @@
+update product_batches
+set deleted_at = case when deleted_at is null then current_timestamp() else null end
+	 ,deleted_by = {{appsmith.store.user_id}} 
+	 where bin_to_uuid(id) = '{{tbl_ProdBtch_list.selectedRow.prd_btch_uuid}}'

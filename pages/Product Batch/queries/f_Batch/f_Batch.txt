@@ -1,0 +1,10 @@
+select a.prd_btch_nbr
+     , a.prd_btch_date
+		 , a.prd_btch_uuid uuid
+     , a.prd_name
+		from   v_prd_btch_dtl a
+		where  a.prd_id = {{sel_prod.selectedOptionValue}}
+		and    ifnull(prd_btch_del,0) = 0
+ORDER by prd_btch_date desc
+LIMIT 15
+	;

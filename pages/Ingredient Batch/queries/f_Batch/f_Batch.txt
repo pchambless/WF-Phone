@@ -1,0 +1,7 @@
+select  a.ingr_btch_nbr Batch, date_format(a.purch_date,'%Y-%m-%d') Date, ifnull(prd_btch_cnt,0) maps, a.ingr_btch_uuid uuid
+from   v_ingr_btch_dtl a
+where  a.ingr_id = {{sel_ingr.selectedOptionValue}}
+and    ifnull(ingr_btch_del,0) = 0
+ORDER by purch_date desc
+limit 20
+

@@ -1,0 +1,4 @@
+update products
+set deleted_at = now()
+, deleted_by = {{appsmith.store.user_id}}
+where id = {{jsnProd.formData.id}}

@@ -1,0 +1,14 @@
+INSERT INTO ingredient_batches
+	(id
+	,ingredient_id, vendor_id, brand_id
+	,lot_number, batch_number, purchase_date, purchase_quantity
+	,global_measure_unit_id, unit_quantity, unit_price, purchase_total_amount, best_by_date
+	,comments, created_at, created_by
+	)
+	VALUES
+	(
+		UUID_TO_BIN(UUID()),
+		{{ sel_ingr.selectedOptionValue }}, {{ jsnBatch.formData.vendor_id }}, {{ jsnBatch.formData.brand_id }},
+		{{ jsnBatch.formData.lot_number || ''}}, {{jsnBatch.formData.batch_number }}, {{jsnBatch.formData.purchase_date }}, {{ jsnBatch.formData.purchase_quantity}}, {{ jsnBatch.formData.global_measure_unit_id }}, {{jsnBatch.formData.unit_quantity }}, {{jsnBatch.formData.unit_price}}, {{jsnBatch.formData.purchase_total_amount}}, {{jsnBatch.formData.best_by_date || null}},
+    {{jsnBatch.formData.comments || ''}}, current_timestamp(), {{appsmith.store.user_id}}
+  );

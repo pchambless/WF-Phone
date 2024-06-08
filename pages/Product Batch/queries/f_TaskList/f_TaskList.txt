@@ -1,0 +1,3 @@
+select ordr task_ordr, task_name, measure_value value, comments, taskWrkrs, task_id, prd_task_uuid
+from  v_prd_btch_task_dtl
+where prd_btch_uuid = {{tbl_Batch.triggeredRow.uuid}}

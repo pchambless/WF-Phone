@@ -1,0 +1,4 @@
+insert into ingredient_types
+(name, account_id, created_by)
+VALUES
+({{}}, {{appsmith.store.acct_id}},{{appsmith.store.user_id}})

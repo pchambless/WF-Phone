@@ -1,0 +1,17 @@
+insert into product_batches
+( id, product_id, batch_start, batch_number, comments,
+ location, batch_quantity, global_measure_unit_id, best_by_date, 
+ created_at, created_by)
+values
+	( UUID_TO_BIN(UUID()), 
+	  {{sel_prod.selectedOptionValue}}
+	 	,{{jsnBatch.formData.batch_start}}
+	 	,{{jsnBatch.formData.batch_number}}
+	 	,{{jsnBatch.formData.comments || ''}}
+		,{{jsnBatch.formData.location}}
+	 	, 0
+	  ,{{jsnBatch.formData.global_measure_unit_id}}
+		,{{jsnBatch.formData.best_by_date}}
+		, current_timestamp()
+	 	, {{appsmith.store.user_id}}
+	);

@@ -1,0 +1,9 @@
+update products
+set name = {{jsnProd.formData.name}}
+, code = {{jsnProd.formData.code}}
+, account_id = {{appsmith.store.acct_id}}
+, product_type_id = {{sel_Type.selectedOptionValue}} 
+, description = {{jsnProd.formData.description}}
+, updated_by = {{appsmith.store.user_id}}
+, updated_at = now()
+where id = {{jsnProd.formData.id}}

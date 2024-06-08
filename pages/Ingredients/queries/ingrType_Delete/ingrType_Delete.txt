@@ -1,0 +1,4 @@
+update ingredient_types
+set deleted_at = Now()
+, deleted_by = {{appsmith.store.user_id}}
+where id = {{sel_Type.selectedOptionValue}};

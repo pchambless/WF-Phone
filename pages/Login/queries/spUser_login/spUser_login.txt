@@ -1,0 +1,3 @@
+call spUser_login ('{{appsmith.user.email}}');
+select '' where false;
+

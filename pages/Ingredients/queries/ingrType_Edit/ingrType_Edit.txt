@@ -1,0 +1,5 @@
+update ingredient_types
+set name = {{}}
+, updated_at = now()
+, updated_by = {{appsmith.store.user_id}}
+where id = {{sel_Type.selectedOptionValue}};

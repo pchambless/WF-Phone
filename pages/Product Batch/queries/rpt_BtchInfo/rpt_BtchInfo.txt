@@ -1,0 +1,4 @@
+select {{appsmith.store.acct_name}} acct_name, prd_type, prd_name, prd_btch_nbr, prd_btch_date, best_by_date, comments, location
+from   v_prd_btch_dtl a
+where  prd_btch_uuid = {{tbl_ProdBtch_list.triggeredRow.prd_btch_uuid}}
+

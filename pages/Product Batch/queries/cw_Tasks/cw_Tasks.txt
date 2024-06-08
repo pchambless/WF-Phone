@@ -1,0 +1,11 @@
+select b.task_ordr Ordr, b.task_nm Task, ifNull(c.taskWrkrs,'') taskWrkrs, c.workers, ifnull(c.measure_value,'') recorded, c.comments
+	, b.task_id, a.prd_id, a.prd_btch_uuid, a.prd_btch_nbr, c.prd_task_uuid
+	from   v_prd_btch_dtl a
+	join v_prd_type_tasks_active b
+	on a.prd_type_id = b.prd_type_id
+	left join v_prd_btch_task_dtl c
+	on a.prd_btch_uuid = c.prd_btch_uuid
+	and b.task_id = c.task_id
+	where  a.prd_btch_uuid = {{tbl_Batch.triggeredRow.uuid}}
+	order by b.task_ordr
+	;

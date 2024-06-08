@@ -1,0 +1,12 @@
+INSERT INTO product_batch_tasks
+  		(id, product_batch_id, task_id, comments, created_at, created_by)
+    select
+			uuid_to_bin(uuid()),
+	    uuid_to_bin({{appsmith.store.ProdUUID}}),
+	    task_id,
+			'',
+	    current_timestamp(),
+			{{appsmith.store.user_id}} 
+   from v_prd_type_tasks
+   where prd_type_id = {{sel_Type.selectedOptionValue}} 
+    

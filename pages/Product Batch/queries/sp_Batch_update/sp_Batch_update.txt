@@ -1,0 +1,14 @@
+UPDATE product_batches
+  	SET batch_start = {{jsnBatch.formData.batch_start}},
+			batch_number = {{jsnBatch.formData.prd_btch_nbr}},
+			location = {{jsnBatch.formData.location}},
+			batch_quantity = {{jsnBatch.formData.btch_qty}},
+			global_measure_unit_id = {{jsnBatch.formData.global_measure_unit_id}},
+			best_by_date = {{jsnBatch.formData.best_by_date}},
+			comments = {{jsnBatch.formData.comments}},
+			recipe_multiply_factor = 1,
+			updated_at = current_timestamp(),
+			updated_by = {{appsmith.store.user_id}}
+  WHERE BIN_TO_UUID(id) = {{jsnBatch.formData.id}}
+  ;
+			

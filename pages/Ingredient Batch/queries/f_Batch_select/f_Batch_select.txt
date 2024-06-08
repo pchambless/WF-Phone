@@ -1,0 +1,4 @@
+SELECT BIN_TO_UUID(id) id, batch_number, ingredient_id, vendor_id, brand_id, lot_number, batch_number,
+purchase_date, purchase_quantity, global_measure_unit_id, unit_quantity, unit_price, purchase_total_amount, best_by_date, comments, active
+FROM ingredient_batches
+where BIN_TO_UUID(id) = {{tbl_Batch.triggeredRow.uuid}};

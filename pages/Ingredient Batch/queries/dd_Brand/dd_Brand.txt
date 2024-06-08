@@ -1,0 +1,4 @@
+select name label, id value
+from  brands
+where account_id = {{appsmith.store.acct_id}}
+order by name

@@ -1,0 +1,3 @@
+call spProdRcpe_delete ({{appsmith.store.prodRcpeUUID}},
+												{{appsmith.store.user_id}});
+select '' where false;

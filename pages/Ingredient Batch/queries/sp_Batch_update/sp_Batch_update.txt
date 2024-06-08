@@ -1,0 +1,16 @@
+UPDATE ingredient_batches
+SET 	vendor_id = {{jsnBatch.formData.vendor_id}},
+	    brand_id = {{jsnBatch.formData.brand_id}},
+		 	lot_number = {{jsnBatch.formData.lot_number || '-'}},
+		 	batch_number = {{jsnBatch.formData.batch_number}},
+			purchase_date = {{jsnBatch.formData.purchase_date}},
+			purchase_quantity = {{jsnBatch.formData.purchase_quantity}},
+			global_measure_unit_id = {{jsnBatch.formData.global_measure_unit_id}},
+			unit_quantity = {{jsnBatch.formData.unit_quantity}},
+			unit_price = {{jsnBatch.formData.unit_price}},
+			purchase_total_amount = {{jsnBatch.formData.purchase_total_amount}},
+			comments = {{jsnBatch.formData.comments || '-'}},
+			best_by_date = {{jsnBatch.formData.best_by_date || null}},
+			updated_at = current_timestamp(),
+			updated_by = {{appsmith.store.user_id}}
+  	WHERE BIN_TO_UUID(id) = {{jsnBatch.formData.id}};

@@ -1,0 +1,9 @@
+select a.ingr_btch_nbr, a.purch_date, a.vndr_name, a.ingr_btch_uuid
+from   v_ingr_btch_dtl a
+where  a.ingr_id = {{tbl_Recipe.selectedRow.ingr_id}}
+and    a.ingr_btch_nbr not in 
+(select ingr_btch_nbr
+ from   v_prd_btch_ingr_dtl
+ where  prd_btch_nbr = {{appsmith.store.prodBatch}})
+ order by purch_date desc
+ limit 20

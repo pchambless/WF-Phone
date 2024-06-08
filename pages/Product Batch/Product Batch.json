@@ -1,0 +1,154 @@
+{
+  "unpublishedPage": {
+    "name": "Product Batch",
+    "slug": "product-batch",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 2605.9999999999995,
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 760,
+          "containerStyle": "none",
+          "snapRows": 84,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 860,
+          "mobileTopRow": 0,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "fixed"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Product Batch_dd_Measure",
+              "name": "dd_Measure",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_dd_Type",
+              "name": "dd_Type",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_dd_Wrkr",
+              "name": "dd_Wrkr",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_f_BatchMapped",
+              "name": "f_BatchMapped",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.ProdUUID",
+                "appsmith.store.ingrID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Product Batch_dd_Prod",
+              "name": "dd_Prod",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_f_Batch",
+              "name": "f_Batch",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_prod.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_f_BatchChoices",
+              "name": "f_BatchChoices",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Recipe.selectedRow.ingr_id",
+                "appsmith.store.prodBatch"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_f_Batch_select",
+              "name": "f_Batch_select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Batch.triggeredRow.uuid"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_f_TaskList",
+              "name": "f_TaskList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Batch.triggeredRow.uuid"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Product Batch_f_Prod_select",
+              "name": "f_Prod_select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_prod.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Product Batch",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "66045fda95164773a81f43e1_66045fda95164773a81f43f3"
+}

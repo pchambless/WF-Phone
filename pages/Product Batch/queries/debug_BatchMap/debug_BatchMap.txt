@@ -1,0 +1,5 @@
+select prd_btch_nbr, prd_type, prd_name, ingr_name, ingr_btch_nbr
+from   v_prd_btch_ingr_dtl a
+where  a.prd_btch_uuid  = '{{appsmith.store.ProdUUID}}'
+and a.prd_rcpe_uuid = '{{appsmith.store.RcpeUUID}}'
+and a.ingr_btch_uuid = '{{appsmith.store.IngrUUID}}'

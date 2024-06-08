@@ -1,0 +1,7 @@
+update product_recipes
+ set global_measure_unit_id = {{jsnRecipe.formData}}
+	                    , {{iQty.text}}
+											, {{iRcpeMeasure.selectedOptionValue}} 
+											, {{iComments.text}}
+											, {{appsmith.store.user_id}}
+  										, {{tblProdRcpe.selectedRow.prd_rcpe_uuid }});

@@ -1,0 +1,4 @@
+DELETE 
+	FROM ingredient_batches
+	WHERE BIN_TO_UUID(id) = {{tbl_Batch.triggeredRow.uuid}}
+	;
