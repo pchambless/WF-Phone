@@ -51,7 +51,7 @@
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
         "buttonVariant": "SECONDARY"
     },
-    "isVisible": "{{appsmith.store.editMode === 'edit' ? true : false}}",
+    "isVisible": true,
     "version": 1,
     "tags": [
         "Suggested",
@@ -138,7 +138,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "1.5rem",
-    "originalBottomRow": 59,
+    "originalBottomRow": 56,
     "useSourceData": true,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -294,7 +294,7 @@
         {"key": "schema.__root_schema__.children.customField1.onOptionChange"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 56,
+    "bottomRow": 53,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "{{tbl_Tasks.selectedRow.task_nm}}",
