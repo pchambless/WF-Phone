@@ -1,4 +1,10 @@
 insert into products
 (name, code, account_id, product_type_id, description, created_by)
 VALUES
-({{jsnProd.formData.name}}, {{jsnProd.formData.code}},{{appsmith.store.acct_id}}, {{sel_Type.selectedOptionValue}} , {{jsnProd.formData.description}}, {{appsmith.store.user_id}});
+(	 {{jsnProd.formData.name}}
+	,{{jsnProd.formData.code}}
+	,{{appsmith.store.acct_id}}
+	,{{sel_Type.selectedOptionValue}} 
+	,{{jsnProd.formData.description}}
+	,{{appsmith.store.user_id}}
+);

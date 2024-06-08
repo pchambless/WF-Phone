@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsTask",
+    "pageId": "Products",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Products_jsTask",
+  "deleted": false,
+  "gitSyncId": "6664696488cf8166d347ad0a_53f8f764-e7b1-4c0f-bc2f-0521bc1eb43e"
+}

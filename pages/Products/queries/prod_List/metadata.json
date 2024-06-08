@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select a.name,code, description, a.id, a.product_type_id prodTypeID\nfrom  products a\nwhere  a.product_type_id = {{sel_Type.selectedOptionValue}}\nand active = 'Y'\norder by name;",
+      "body": "select a.name,code, description, a.id, a.product_type_id\nfrom  products a\nwhere  a.product_type_id = {{sel_Type.selectedOptionValue}}\nand active = 'Y'\norder by name;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -1,0 +1,10 @@
+insert into tasks
+(ordr, name, account_id, product_type_id, description, created_by)
+VALUES
+(   {{jsnTask.formData.task_ordr}} 
+	, {{jsnTask.formData.name}}
+	, {{appsmith.store.acct_id}}
+	, {{sel_Type.selectedOptionValue}}
+	, {{jsnTask.formData.task_desc}}
+	, {{appsmith.store.user_id}}
+);

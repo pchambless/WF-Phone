@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 740,
+          "bottomRow": 650,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -31,14 +31,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "Products_dd_Measure",
-              "name": "dd_Measure",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Products_prodType_dd",
               "name": "prodType_dd",
@@ -62,8 +54,20 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Products_taskList",
-              "name": "taskList",
+              "id": "Products_task_List",
+              "name": "task_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Products_prodType_select",
+              "name": "prodType_select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

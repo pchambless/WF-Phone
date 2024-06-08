@@ -1,4 +1,8 @@
 insert into product_types
 (name, account_id, created_by)
 VALUES
-({{jsnProdType.formData.name}}, {{appsmith.store.acct_id}}, {{appsmith.store.user_id}});
+(
+	{{jsnProdType.formData.name}}
+	,{{appsmith.store.acct_id}}
+	,{{appsmith.store.user_id}}
+);

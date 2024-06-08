@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "prodType_Add",
+    "name": "task_List",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into product_types\n(name, account_id, created_by)\nVALUES\n(\n\t{{jsnProdType.formData.name}}\n\t,{{appsmith.store.acct_id}}\n\t,{{appsmith.store.user_id}}\n);",
+      "body": "select task_ordr, task_nm, task_desc, task_id\nfrom  v_prd_type_tasks\nwhere prd_type_id = {{sel_Type.selectedOptionValue}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,17 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.acct_id",
-      "appsmith.store.user_id",
-      "jsnProdType.formData.name"
+      "sel_Type.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-08T00:53:12Z"
+    "createdAt": "2022-03-23T20:34:25Z"
   },
-  "id": "Products_prodType_Add",
+  "id": "Products_task_List",
   "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_678ec1e0-68aa-405a-be8b-a3b2810139c5"
+  "gitSyncId": "66045fda95164773a81f43e1_b7db5404-2192-416d-8c22-359d819cae43"
 }

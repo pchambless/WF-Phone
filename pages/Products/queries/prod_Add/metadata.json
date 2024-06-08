@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into products\n(name, code, account_id, product_type_id, description, created_by)\nVALUES\n({{jsnProd.formData.name}}, {{jsnProd.formData.code}},{{appsmith.store.acct_id}}, {{sel_Type.selectedOptionValue}} , {{jsnProd.formData.description}}, {{appsmith.store.user_id}});",
+      "body": "insert into products\n(name, code, account_id, product_type_id, description, created_by)\nVALUES\n(\t {{jsnProd.formData.name}}\n\t,{{jsnProd.formData.code}}\n\t,{{appsmith.store.acct_id}}\n\t,{{sel_Type.selectedOptionValue}} \n\t,{{jsnProd.formData.description}}\n\t,{{appsmith.store.user_id}}\n);",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
