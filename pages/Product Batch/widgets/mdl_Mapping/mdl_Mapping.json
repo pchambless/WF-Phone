@@ -11,7 +11,7 @@
         "notification"
     ],
     "topRow": 13,
-    "bottomRow": 463,
+    "bottomRow": 573,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -28,7 +28,7 @@
         "widgetName": "Canvas24",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 450,
+        "bottomRow": 560,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
@@ -64,7 +64,7 @@
         "flexLayers": []
     }],
     "key": "s3engc2dq2",
-    "height": 450,
+    "height": 560,
     "isDeprecated": false,
     "rightColumn": 29,
     "detachFromLayout": true,

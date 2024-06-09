@@ -32,36 +32,16 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Product Batch_dd_Measure",
-              "name": "dd_Measure",
+              "id": "Product Batch_Measure_dd",
+              "name": "Measure_dd",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Product Batch_dd_Type",
-              "name": "dd_Type",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product Batch_dd_Wrkr",
-              "name": "dd_Wrkr",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product Batch_f_BatchMapped",
-              "name": "f_BatchMapped",
+              "id": "Product Batch_batch_Mapped",
+              "name": "batch_Mapped",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -69,32 +49,32 @@
                 "appsmith.store.ingrID"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_prodType_dd",
+              "name": "prodType_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_wrkr_dd",
+              "name": "wrkr_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Product Batch_dd_Prod",
-              "name": "dd_Prod",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_Type.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product Batch_f_Batch",
-              "name": "f_Batch",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_prod.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product Batch_f_BatchChoices",
-              "name": "f_BatchChoices",
+              "id": "Product Batch_batch_Choices",
+              "name": "batch_Choices",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -104,8 +84,18 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Product Batch_f_Batch_select",
-              "name": "f_Batch_select",
+              "id": "Product Batch_batch_List",
+              "name": "batch_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_prod.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_batch_Select",
+              "name": "batch_Select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -114,8 +104,18 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Product Batch_f_TaskList",
-              "name": "f_TaskList",
+              "id": "Product Batch_prod_dd",
+              "name": "prod_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_task_List",
+              "name": "task_List",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -126,8 +126,8 @@
           ],
           [
             {
-              "id": "Product Batch_f_Prod_select",
-              "name": "f_Prod_select",
+              "id": "Product Batch_prod_Select",
+              "name": "prod_Select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

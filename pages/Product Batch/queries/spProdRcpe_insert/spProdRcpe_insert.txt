@@ -1,9 +1,0 @@
-call spProdRcpe_insert (
-		{{ appsmith.store.prodID }},
-    {{ appsmith.store.ingrID }},
-		{{ iRcpeMeasure.selectedOptionValue }},
-		{{ iOrdr.text}},
-		{{ iQty.text}},
-		{{ iComments.text }},
-		{{ appsmith.store.user_id }}
-  );

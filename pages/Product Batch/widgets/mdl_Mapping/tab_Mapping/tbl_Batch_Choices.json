@@ -264,7 +264,7 @@
     "textSize": "0.875rem",
     "widgetId": "maxwngibdi",
     "minWidth": 450,
-    "tableData": "{{f_BatchChoices.data}}",
+    "tableData": "{{batch_Choices.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "lpy928efb4",

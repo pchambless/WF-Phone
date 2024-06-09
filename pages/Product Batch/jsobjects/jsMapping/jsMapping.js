@@ -1,14 +1,21 @@
 export default {
 	ingr_Map: async () => {
-		await sp_IngrMap_insert.run();
-		await f_BatchChoices.run();
-		await f_BatchMapped.run();
-		await f_ProdIngrMap_list.run();
+		await prodIngrMap_Add.run();
+		await batch_Choices.run();
+		await batch_Mapped.run();
+		await prodIngrMap_List.run();
   },
 	ingr_UnMap: async () => {
-		await spProdIngrMap_delete.run();
-		await f_BatchChoices.run();
-		await f_BatchMapped.run();
-		await f_ProdIngrMap_list.run()
-  }
+		await prodIngrMap_Delete.run();
+		await batch_Choices.run();
+		await batch_Mapped.run();
+		await prodIngrMap_List.run()
+  },
+	async mapping () {
+		await storeValue('ProdUUID',tbl_Batch.triggeredRow.uuid)
+		storeValue('prodBatch',tbl_Batch.triggeredRow.prd_btch_nbr)
+		await rcpe_List.run()
+		await task_List.run()
+		showModal('mdl_Mapping')
+	}
 }

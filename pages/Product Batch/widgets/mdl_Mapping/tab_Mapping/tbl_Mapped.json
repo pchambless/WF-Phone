@@ -229,7 +229,7 @@
     "textSize": "0.875rem",
     "widgetId": "2q7rqaafe9",
     "minWidth": 450,
-    "tableData": "{{f_BatchMapped.data}}",
+    "tableData": "{{batch_Mapped.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "lpy928efb4",

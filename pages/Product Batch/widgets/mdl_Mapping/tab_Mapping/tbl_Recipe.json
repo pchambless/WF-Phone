@@ -10,7 +10,6 @@
     "animateLoading": true,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"},
         {"key": "boxShadow"},
         {"key": "tableData"},
         {"key": "primaryColumns.ingr_ordr.computedValue"},
@@ -57,8 +56,8 @@
             "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
         }
     },
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1711822952751,
+    "borderRadius": "1.5rem",
+    "columnUpdatedAt": 1717947296206,
     "primaryColumnId": "prd_rcpe_uuid",
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 28,
@@ -77,7 +76,10 @@
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 33,
-    "columnWidthMap": {"ingr_ordr": 60},
+    "columnWidthMap": {
+        "customColumn1": 77,
+        "ingr_ordr": 62
+    },
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 34,
@@ -134,7 +136,7 @@
             "index": 0,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "",
+            "label": "Ord",
             "columnType": "number",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",
@@ -210,7 +212,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{await storeValue('RcpeUUID',tbl_Recipe.selectedRow.prd_rcpe_uuid)\nawait storeValue('ingrID',tbl_Recipe.selectedRow.ingr_id)\nf_BatchChoices.run()\nf_BatchMapped.run()}}",
+    "onRowSelected": "{{jsRecipe.select()}}",
     "key": "ydjecff9rr",
     "canFreezeColumn": true,
     "isDeprecated": false,
@@ -218,7 +220,7 @@
     "textSize": "0.875rem",
     "widgetId": "8jqjbcm420",
     "minWidth": 450,
-    "tableData": "{{f_Recipe.data}}",
+    "tableData": "{{rcpe_List.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "7bf8ppcv5b",
