@@ -67,6 +67,6 @@
     "originalTopRow": 19.999999999997822,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{jsRecipe.select()\njsProdType.select()}}",
+    "onOptionChange": "{{jsProd.select()}}",
     "minDynamicHeight": 4
 }

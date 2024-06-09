@@ -2,15 +2,15 @@ export default {
 	spIngrBtch_listing: (actIndc) => {
 		storeValue('active', actIndc);
 		showAlert(actIndc === 'Y' ? 'Active' :  'Deleted');
-		f_Batch.run();
+		ingrBtch_List.run();
 },
 	upsertIngrBtch:  () => {
 		const queries = {
-		"insert": sp_Batch_insert,
-		"update": sp_Batch_update
+		"insert": ingrBtch_Add,
+		"update": ingrBtch_Edit
 		};
 		return queries[tbl_IngrBtch_list.triggeredRow.act]?.run()
-		.then (() => f_Batch.run())
+		.then (() => ingrBtch_List.run())
 		.catch (() => showAlert(queries[tbl_IngrBtch_list.triggeredRow.act]?.data))
 },
 	newBatch: async () => {

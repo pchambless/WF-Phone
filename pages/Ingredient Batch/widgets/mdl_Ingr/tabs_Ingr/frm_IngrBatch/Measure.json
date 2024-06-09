@@ -42,7 +42,7 @@
     "dynamicTriggerPathList": [],
     "labelPosition": "Top",
     "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-    "sourceData": "{{dd_Measure.data}}",
+    "sourceData": "{{meas_dd.data}}",
     "key": "tgtsh2ksv7",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,

@@ -42,16 +42,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Ingredient Batch_dd_Vendor",
-              "name": "dd_Vendor",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Ingredient Batch_jsType.initActive",
               "name": "jsType.initActive",
               "collectionId": "Ingredient Batch_jsType",
@@ -61,12 +51,22 @@
                 "() => {\n  storeValue('active', 'Y');\n}"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient Batch_vndr_dd",
+              "name": "vndr_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Ingredient Batch_dd_Brand",
-              "name": "dd_Brand",
+              "id": "Ingredient Batch_brnd_dd",
+              "name": "brnd_dd",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -75,50 +75,50 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Ingredient Batch_dd_Measure",
-              "name": "dd_Measure",
+              "id": "Ingredient Batch_ingrType_dd",
+              "name": "ingrType_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient Batch_meas_dd",
+              "name": "meas_dd",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_dd_Type",
-              "name": "dd_Type",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Ingredient Batch_dd_Ingr",
-              "name": "dd_Ingr",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_Type.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_f_Batch",
-              "name": "f_Batch",
+              "id": "Ingredient Batch_ingrBtch_List",
+              "name": "ingrBtch_List",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
                 "sel_ingr.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient Batch_ingr_dd",
+              "name": "ingr_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Ingredient Batch_f_Batch_select",
-              "name": "f_Batch_select",
+              "id": "Ingredient Batch_ingrBtch_Select",
+              "name": "ingrBtch_Select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -127,8 +127,8 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Ingredient Batch_f_ingr_select",
-              "name": "f_ingr_select",
+              "id": "Ingredient Batch_ingr_Select",
+              "name": "ingr_Select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -139,8 +139,8 @@
           ],
           [
             {
-              "id": "Ingredient Batch_f_Batch_last",
-              "name": "f_Batch_last",
+              "id": "Ingredient Batch_ingrBtch_Last",
+              "name": "ingrBtch_Last",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

@@ -1,12 +1,12 @@
 export default {
 	async addVendor () {
-		await sp_Vendor_insert.run()
-		await dd_Vendor.run()
+		await vndr_Add.run()
+		await vndr_dd.run()
 		await storeValue('addVndrBrnd','')
 	},
 	async addBrand () {
-		await sp_Brand_insert.run()
-		await dd_Brand.run()
+		await brnd_Add.run()
+		await brnd_dd.run()
 		await storeValue('addVndrBrnd','')
 	}
 }

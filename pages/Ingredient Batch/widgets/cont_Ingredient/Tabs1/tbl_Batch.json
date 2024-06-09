@@ -15,7 +15,8 @@
         {"key": "primaryColumns.uuid.computedValue"},
         {"key": "primaryColumns.Date.computedValue"},
         {"key": "primaryColumns.customColumn1.menuItems.menuItemucgulknjyh.isVisible"},
-        {"key": "primaryColumns.Batch.computedValue"}
+        {"key": "primaryColumns.Batch.computedValue"},
+        {"key": "primaryColumns.maps.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -57,7 +58,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1713831957654,
+    "columnUpdatedAt": 1717891387890,
     "originalBottomRow": 65,
     "primaryColumnId": "uuid",
     "defaultSelectedRowIndices": [0],
@@ -68,6 +69,7 @@
         "customColumn1",
         "Date",
         "Batch",
+        "maps",
         "uuid"
     ],
     "dynamicPropertyPathList": [
@@ -108,6 +110,40 @@
     ],
     "borderWidth": "1",
     "primaryColumns": {
+        "maps": {
+            "computedValue": "{{tbl_Batch.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"maps\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "maps",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "maps",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 3,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "maps",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "number",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "maps",
+            "currencyCode": "USD",
+            "cellBackground": "#f4f4f5",
+            "verticalAlignment": "CENTER"
+        },
         "Batch": {
             "computedValue": "{{tbl_Batch.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Batch\"]))}}",
             "isEditable": false,

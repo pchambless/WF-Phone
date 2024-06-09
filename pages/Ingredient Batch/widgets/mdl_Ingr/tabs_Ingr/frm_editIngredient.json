@@ -81,7 +81,7 @@
                 "originalIdentifier": "ingredient_type_id",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frm_editIngredient.sourceData, frm_editIngredient.formData, frm_editIngredient.fieldState)}}",
                 "children": {},
-                "options": "{{dd_Type.data}}",
+                "options": "{{ingrType_dd.data}}",
                 "position": 0,
                 "isDisabled": false,
                 "sourceData": 3,
@@ -373,7 +373,7 @@
         {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"}
     ],
-    "sourceData": "{{f_ingr_select.data[0]}}",
+    "sourceData": "{{ingr_Select.data[0]}}",
     "showReset": false,
     "resetButtonLabel": "Reset",
     "key": "3dof380g51",

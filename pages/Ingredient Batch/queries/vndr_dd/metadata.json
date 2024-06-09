@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "sp_Brand_insert",
+    "name": "vndr_dd",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -18,15 +18,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO brands\n  (name, account_id, created_at, created_by)\nVALUES\n  ({{inBrand.text}}, {{appsmith.store.acct_id}}, current_timestamp(), {{appsmith.store.user_id}}\n  );",
-      "selfReferencingDataPaths": [],
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
+      "body": "select id value, name label\nfrom vendors\nwhere account_id = {{appsmith.store.acct_id}}\norder by name\n",
+      "selfReferencingDataPaths": []
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,17 +31,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.acct_id",
-      "appsmith.store.user_id",
-      "inBrand.text"
+      "appsmith.store.acct_id"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-03-01T01:03:40Z"
+    "createdAt": "2024-03-27T18:05:17Z"
   },
-  "id": "Ingredient Batch_sp_Brand_insert",
+  "id": "Ingredient Batch_vndr_dd",
   "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_66045fdc95164773a81f4480"
+  "gitSyncId": "66045fda95164773a81f43e1_66045fdc95164773a81f4462"
 }

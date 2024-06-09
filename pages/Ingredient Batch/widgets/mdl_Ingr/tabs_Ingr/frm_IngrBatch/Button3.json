@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 121.99999999999996,
     "widgetName": "Button3",
-    "onClick": "{{jsIngrBtch.upsertIngrBtch();\nstoreValue('tab_Ingr', 'Batches').then(() => {}).catch(() => {\n  showAlert(sp_Batch_update.data, 'error');\n});}}",
+    "onClick": "{{jsIngrBtch.upsertIngrBtch();\nstoreValue('tab_Ingr', 'Batches').then(() => {}).catch(() => {\n  showAlert(ingrBtch_Edit.data, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",

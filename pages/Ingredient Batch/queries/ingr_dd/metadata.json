@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "f_Batch",
+    "name": "ingr_dd",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select  a.ingr_btch_nbr Batch, date_format(a.purch_date,'%Y-%m-%d') Date, ifnull(prd_btch_cnt,0) maps, a.ingr_btch_uuid uuid\nfrom   v_ingr_btch_dtl a\nwhere  a.ingr_id = {{sel_ingr.selectedOptionValue}}\nand    ifnull(ingr_btch_del,0) = 0\nORDER by purch_date desc\nlimit 20\n\n",
+      "body": "select concat(a.name,' (',code,')') name, a.id, code\nfrom  ingredients a\nwhere  a.ingredient_type_id = {{sel_Type.selectedOptionValue}}\nand active = 'Y'\norder by name;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,15 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "sel_ingr.selectedOptionValue"
+      "sel_Type.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-03-24T17:26:22Z"
+    "createdAt": "2024-03-27T19:14:31Z"
   },
-  "id": "Ingredient Batch_f_Batch",
+  "id": "Ingredient Batch_ingr_dd",
   "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_66045fdc95164773a81f4479"
+  "gitSyncId": "66045fda95164773a81f43e1_6604701795164773a81f4540"
 }

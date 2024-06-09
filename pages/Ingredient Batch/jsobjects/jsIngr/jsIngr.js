@@ -3,15 +3,15 @@ export default {
 	editMode: 'edit',
 	
 	batchUpsert: async () => {
-	appsmith.store.editMode === 'edit' ? sp_Batch_update.run() : sp_Batch_insert.run()
-	appsmith.store.editMode === 'edit' ? showAlert(sp_Batch_update.data) : 	showAlert(sp_Batch_insert.data)
+	appsmith.store.editMode === 'edit' ? ingrBtch_Edit.run() : ingrBtch_Add.run()
+	appsmith.store.editMode === 'edit' ? showAlert(ingrBtch_Edit.data) : 	showAlert(ingrBtch_Add.data)
 	
-	await f_Batch.run();
+	await ingrBtch_List.run();
 	this.defaultTab = 'Batches';
 },
 	batchList ()  {
 		let data = []
-		data = f_Batch.data.length ? f_Batch.data : this.batchFirst()
+		data = ingrBtch_List.data.length ? ingrBtch_List.data : this.batchFirst()
 		return data
 	},
 	

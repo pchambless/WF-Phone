@@ -57,6 +57,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{f_Batch_last.data[0].batch_number}}",
+    "defaultText": "{{ingrBtch_Last.data[0].batch_number}}",
     "minDynamicHeight": 4
 }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "dd_Measure",
+    "name": "meas_dd",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -33,7 +33,7 @@
     "userPermissions": [],
     "createdAt": "2024-03-27T18:05:17Z"
   },
-  "id": "Ingredient Batch_dd_Measure",
+  "id": "Ingredient Batch_meas_dd",
   "deleted": false,
   "gitSyncId": "66045fda95164773a81f43e1_66045fdc95164773a81f4471"
 }

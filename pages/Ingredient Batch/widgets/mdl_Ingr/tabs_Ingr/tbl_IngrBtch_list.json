@@ -95,7 +95,7 @@
             "isCompact": true,
             "boxShadow": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( \"none\"))}}",
             "computedValue": "",
-            "onClick": "{{sp_Batch_delete.run(() => f_Batch.run(), () => {})}}",
+            "onClick": "{{ingrBtch_Delete.run(() => ingrBtch_List.run(), () => {})}}",
             "buttonColor": "#03B365",
             "enableSort": true,
             "id": "customColumn1",
@@ -108,7 +108,7 @@
             "buttonStyle": "rgb(3, 179, 101)",
             "menuItems": {
                 "menuItem0ivbtc1g46": {
-                    "onClick": "{{sp_Batch_delete.run(() => f_Batch.run(), () => showAlert('Delete Not Successful','error'))}}",
+                    "onClick": "{{ingrBtch_Delete.run(() => ingrBtch_List.run(), () => showAlert('Delete Not Successful','error'))}}",
                     "widgetId": "i0x080d38k",
                     "index": 1,
                     "id": "menuItem0ivbtc1g46",
@@ -212,7 +212,7 @@
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "widgetId": "rytb9b68bu",
     "isVisibleFilters": true,
-    "tableData": "{{f_Batch.data}}",
+    "tableData": "{{ingrBtch_List.data}}",
     "isVisible": true,
     "label": "Data",
     "searchKey": "",

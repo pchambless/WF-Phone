@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "sp_Batch_insert",
+    "name": "ingrBtch_Add",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -57,7 +57,7 @@
     "userPermissions": [],
     "createdAt": "2023-07-11T15:46:17Z"
   },
-  "id": "Ingredient Batch_sp_Batch_insert",
+  "id": "Ingredient Batch_ingrBtch_Add",
   "deleted": false,
   "gitSyncId": "66045fda95164773a81f43e1_66045fdc95164773a81f4469"
 }
