@@ -198,7 +198,7 @@
             "buttonStyle": "rgb(3, 179, 101)",
             "menuItems": {
                 "menuItem7yqzrmsp9r": {
-                    "onClick": "{{await \nstoreValue('editMode','edit')\nawait f_Batch_select.run()\njsIngr.defaultTab = 'Edit'\n}}",
+                    "onClick": "{{await \nstoreValue('editMode','edit')\nawait ingrBtch_Select.run()\njsIngr.defaultTab = 'Edit'\n}}",
                     "widgetId": "c79mswo2bv",
                     "index": 1,
                     "id": "menuItem7yqzrmsp9r",
@@ -207,7 +207,7 @@
                     "isVisible": true
                 },
                 "menuItemckjdyddc45": {
-                    "onClick": "{{jsIngr.defaultTab = 'Edit'\nawait f_Batch_last.run()\nawait storeValue('editMode','new')}}",
+                    "onClick": "{{jsIngr.defaultTab = 'Edit'\nawait ingrBtch_Last.run()\nawait storeValue('editMode','new')}}",
                     "widgetId": "akkxdmyk0b",
                     "index": 0,
                     "id": "menuItemckjdyddc45",
