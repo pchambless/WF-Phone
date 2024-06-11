@@ -248,6 +248,8 @@
                 "children": {},
                 "options": "[\n  {\n    \"label\": \"Edit\",\n    \"value\": \"Edit\"\n  },\n  {\n    \"label\": \"Add\",\n    \"value\": \"Add\"\n  },\n  {\n    \"label\": \"Delete\",\n    \"value\": \"Delete\"\n  }\n]",
                 "onOptionChange": "{{jsnIngr.formData.editMode === 'Add' ? jsnIngr.setSourceData('') : jsnIngr.setSourceData(tbl_ingr.selectedRow)}}",
+                "labelStyle": "BOLD",
+                "labelTextColor": "#3b82f6",
                 "position": 0,
                 "isDisabled": false,
                 "sourceData": "",
