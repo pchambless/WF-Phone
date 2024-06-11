@@ -18,7 +18,8 @@
         {"key": "primaryColumns.grams_per_ounce.computedValue"},
         {"key": "primaryColumns.default_measure_unit.computedValue"},
         {"key": "primaryColumns.ingredient_type_id.computedValue"},
-        {"key": "primaryColumns.id.computedValue"}
+        {"key": "primaryColumns.id.computedValue"},
+        {"key": "primaryColumns.act.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 1,
@@ -67,7 +68,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1717790096324,
+    "columnUpdatedAt": 1718129200385,
     "originalBottomRow": 41,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],
@@ -82,7 +83,8 @@
         "grams_per_ounce",
         "default_measure_unit",
         "ingredient_type_id",
-        "id"
+        "id",
+        "act"
     ],
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
@@ -90,6 +92,7 @@
     "bottomRow": 31,
     "columnWidthMap": {
         "code": 72,
+        "act": 60,
         "name": 194
     },
     "parentRowSpace": 10,
@@ -159,6 +162,40 @@
             "sticky": "",
             "originalId": "code",
             "currencyCode": "USD",
+            "verticalAlignment": "CENTER"
+        },
+        "act": {
+            "computedValue": "{{tbl_ingr.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"act\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "act",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "act",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 0,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "act",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "text",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "act",
+            "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "ingredient_type_id": {
@@ -325,7 +362,7 @@
     "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
     "widgetId": "h9ojtm9pzu",
     "minWidth": 450,
-    "tableData": "{{ingr_list.data}}",
+    "tableData": "{{ingr_List.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "z4jk7yerww",

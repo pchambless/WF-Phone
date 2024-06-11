@@ -1,6 +1,5 @@
 export default {
-editModeRun: async () => {
-	const mode = jsnIngr.formData.editMode;
+editModeRun: async (mode) => {
 	switch(mode) {
 		case 'Add':
 			await ingr_Add.run();
@@ -11,7 +10,7 @@ editModeRun: async () => {
 		default:
 			console.log("Invalid mode");
 		}
-	await ingr_list.run()
+	await ingr_List.run()
 }
 	
 }

@@ -62,6 +62,6 @@
     "originalTopRow": 19.999999999997822,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{ingr_list.run()\n}}",
+    "onOptionChange": "{{ingr_List.run()\n}}",
     "minDynamicHeight": 4
 }

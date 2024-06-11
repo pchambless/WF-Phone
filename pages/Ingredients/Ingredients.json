@@ -54,8 +54,8 @@
           ],
           [
             {
-              "id": "Ingredients_ingr_list",
-              "name": "ingr_list",
+              "id": "Ingredients_ingr_List",
+              "name": "ingr_List",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
