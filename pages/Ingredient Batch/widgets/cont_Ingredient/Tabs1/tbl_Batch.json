@@ -58,7 +58,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1717891387890,
+    "columnUpdatedAt": 1718111918389,
     "originalBottomRow": 65,
     "primaryColumnId": "uuid",
     "defaultSelectedRowIndices": [0],
@@ -216,7 +216,7 @@
                     "isVisible": true
                 },
                 "menuItemucgulknjyh": {
-                    "onClick": "{{await sp_Batch_delete.run()\nawait f_Batch.run()}}",
+                    "onClick": "{{await ingrBtch_Delete.run()\nawait ingrBtch_List.run()}}",
                     "widgetId": "gevyoi3q35",
                     "index": 2,
                     "id": "menuItemucgulknjyh",

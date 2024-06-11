@@ -66,8 +66,8 @@
           ],
           [
             {
-              "id": "Products_prodType_select",
-              "name": "prodType_select",
+              "id": "Products_prodType_Select",
+              "name": "prodType_Select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

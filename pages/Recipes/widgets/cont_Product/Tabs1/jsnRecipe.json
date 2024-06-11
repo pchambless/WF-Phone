@@ -2,6 +2,7 @@
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "borderColor": "#E0DEDE",
     "iconSVG": "/static/media/icon.7df6f087cceba86a9a5481b6c7f4871d.svg",
+    "onSubmit": "{{ingr_Edit.run()\ningr_List.run()\njsRecipe.editMode('Back')}}",
     "topRow": 0,
     "type": "JSON_FORM_WIDGET",
     "animateLoading": true,
@@ -44,7 +45,10 @@
         {"key": "schema.__root_schema__.children.ingr_type_id.accentColor"},
         {"key": "schema.__root_schema__.children.ingr_type_id.borderRadius"},
         {"key": "schema.__root_schema__.children.ingr_type_id.options"},
-        {"key": "schema.__root_schema__.children.ingr_id.options"}
+        {"key": "schema.__root_schema__.children.ingr_id.options"},
+        {"key": "schema.__root_schema__.children.comments.defaultValue"},
+        {"key": "schema.__root_schema__.children.comments.borderRadius"},
+        {"key": "schema.__root_schema__.children.comments.accentColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -211,6 +215,28 @@
                 "sourceData": "-",
                 "fieldType": "Text Input"
             },
+            "comments": {
+                "labelTextSize": "0.875rem",
+                "identifier": "comments",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.comments))(jsnRecipe.sourceData, jsnRecipe.formData, jsnRecipe.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnRecipe.sourceData, jsnRecipe.formData, jsnRecipe.fieldState)}}",
+                "dataType": "string",
+                "accessor": "comments",
+                "isVisible": true,
+                "label": "Comments",
+                "originalIdentifier": "comments",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnRecipe.sourceData, jsnRecipe.formData, jsnRecipe.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 9,
+                "isDisabled": false,
+                "sourceData": "",
+                "fieldType": "Multiline Text Input"
+            },
             "customField1": {
                 "labelTextSize": "0.875rem",
                 "identifier": "customField1",
@@ -223,13 +249,13 @@
                 "dataType": "string",
                 "accessor": "editMode",
                 "isVisible": true,
-                "label": "Edit, Add or Delete",
+                "label": "Edit, Add, Delete or Return",
                 "serverSideFiltering": false,
                 "originalIdentifier": "customField1",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnRecipe.sourceData, jsnRecipe.formData, jsnRecipe.fieldState)}}",
                 "children": {},
                 "options": "[\n  {\n    \"label\": \"Edit\",\n    \"value\": \"Edit\"\n  },\n  {\n    \"label\": \"Add\",\n    \"value\": \"Add\"\n  },\n  {\n    \"label\": \"Delete\",\n    \"value\": \"Delete\"\n  },\n  {\n    \"label\": \"Back To Recipes\",\n    \"value\": \"Back\"\n  }\n]",
-                "onOptionChange": "{{jsRecipe.editMode()}}",
+                "onOptionChange": "{{jsRecipe.editMode(jsnRecipe.formData.editMode)}}",
                 "position": 0,
                 "isDisabled": false,
                 "sourceData": "",
@@ -377,6 +403,7 @@
         "sourceData": {
             "ingr_name": "Cucumbers",
             "ingr_meas": "-",
+            "comments": "",
             "ingr_meas_id": 51,
             "ingr_qty": 0,
             "ingr_ordr": 40,
@@ -398,7 +425,8 @@
     },
     "dynamicPropertyPathList": [
         {"key": "schema.__root_schema__.children.customField1.onOptionChange"},
-        {"key": "schema.__root_schema__.children.ingr_type_id.onOptionChange"}
+        {"key": "schema.__root_schema__.children.ingr_type_id.onOptionChange"},
+        {"key": "onSubmit"}
     ],
     "displayName": "JSON Form",
     "bottomRow": 49,
@@ -410,7 +438,8 @@
     "parentColumnSpace": 6.4921875,
     "dynamicTriggerPathList": [
         {"key": "schema.__root_schema__.children.customField1.onOptionChange"},
-        {"key": "schema.__root_schema__.children.ingr_type_id.onOptionChange"}
+        {"key": "schema.__root_schema__.children.ingr_type_id.onOptionChange"},
+        {"key": "onSubmit"}
     ],
     "borderWidth": "1",
     "sourceData": "{{tbl_Recipe.selectedRow}}",

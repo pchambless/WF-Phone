@@ -2,13 +2,31 @@
     "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
     "widgetName": "btnSetup",
     "isCanvas": false,
-    "dynamicPropertyPathList": [{"key": "groupButtons.groupButtonkspk9xhq3z.onClick"}],
+    "dynamicPropertyPathList": [
+        {"key": "groupButtons.groupButtonkspk9xhq3z.onClick"},
+        {"key": "groupButtons.groupButtoneyrw5ee6rr.onClick"}
+    ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.d6773218.svg",
     "topRow": 4,
     "bottomRow": 15,
     "parentRowSpace": 10,
     "groupButtons": {
+        "groupButtoneyrw5ee6rr": {
+            "itemType": "BUTTON",
+            "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW');}}",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "6mvgsa8mdt",
+            "menuItems": {},
+            "index": 3,
+            "label": "Log Out",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "buttonVariant": "filled",
+            "id": "groupButtoneyrw5ee6rr",
+            "isDisabled": false,
+            "placement": "CENTER"
+        },
         "groupButtony2p92s0l1d": {
             "itemType": "BUTTON",
             "onClick": "{{navigateTo('Recipes');}}",
@@ -58,10 +76,14 @@
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButtony2p92s0l1d.onClick"}
+        {"key": "groupButtons.groupButtony2p92s0l1d.onClick"},
+        {"key": "groupButtons.groupButtoneyrw5ee6rr.onClick"}
     ],
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "groupButtons.groupButtoneyrw5ee6rr.buttonColor"}
+    ],
     "key": "ksc8rutbji",
     "labelTextSize": "0.875rem",
     "orientation": "vertical",

@@ -1,7 +1,7 @@
 export default {
 async select () {
 	await prod_List.run()
-	await prodType_select.run()
+	await prodType_Select.run()
 	await task_List.run()
 	await jsTabs.resetTabs()
 },
@@ -31,7 +31,7 @@ async editMode  () {
 			break;
 		case 'Edit':
 		case 'Delete':
-			await jsnProdType.setSourceData(prodType_select.data[0]);
+			await jsnProdType.setSourceData(prodType_Select.data[0]);
 			break;
 		case 'Back':
 			await jsTabs.resetTabs();

@@ -12,8 +12,8 @@
         "parent",
         "group"
     ],
-    "topRow": 12,
-    "bottomRow": 29,
+    "topRow": 29,
+    "bottomRow": 46,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -54,7 +54,7 @@
     "key": "lun37t9wsg",
     "backgroundColor": "#dbeafe",
     "isDeprecated": false,
-    "rightColumn": 50,
+    "rightColumn": 49,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "d62gzvhuh2",
@@ -74,9 +74,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 12,
+    "originalTopRow": 29,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 29,
+    "originalBottomRow": 46,
     "minDynamicHeight": 10
 }

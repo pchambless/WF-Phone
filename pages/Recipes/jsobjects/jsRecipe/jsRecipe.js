@@ -4,9 +4,8 @@ async select () {
 	await storeValue('editRcpe','edit')
 	await ingr_dd.run()
 },
-async editModeRun ()  {
-	const mode = jsnRecipe.formData.editMode;
-	switch(mode) {
+async editModeRun (editMode)  {
+	switch(editMode) {
 		case 'Add':
 			await ingr_Add.run();
 			break;
@@ -25,8 +24,7 @@ async editModeRun ()  {
 	await ingr_List.run()
 	await jsTabs.resetTabs()	
 },
-async editMode  () {
-	const mode = jsnRecipe.formData.editMode;
+async editMode  (mode) {
 	switch(mode) {
 		case 'Add':
 			await jsnRecipe.setSourceData('');

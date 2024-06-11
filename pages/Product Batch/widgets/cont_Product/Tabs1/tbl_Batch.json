@@ -235,7 +235,7 @@
                     "isVisible": true
                 },
                 "menuItem7yqzrmsp9r": {
-                    "onClick": "{{await storeValue('prodBatch',tbl_Batch.triggeredRow.prd_btch_nbr)\nstoreValue('editMode','edit')\nawait f_Batch_select.run()\njsProd.defaultTab = 'Edit'\n}}",
+                    "onClick": "{{await storeValue('prodBatch',tbl_Batch.triggeredRow.prd_btch_nbr)\nstoreValue('editMode','edit')\nawait batch_Select.run()\njsProd.defaultTab = 'Edit'\n}}",
                     "widgetId": "c79mswo2bv",
                     "index": 1,
                     "id": "menuItem7yqzrmsp9r",

@@ -253,7 +253,7 @@
         {"key": "onSubmit"}
     ],
     "borderWidth": "1",
-    "sourceData": "{{prodType_select.data[0]}}",
+    "sourceData": "{{prodType_Select.data[0]}}",
     "resetButtonLabel": "Reset",
     "key": "j241ugu9j9",
     "backgroundColor": "#f4f4f5",

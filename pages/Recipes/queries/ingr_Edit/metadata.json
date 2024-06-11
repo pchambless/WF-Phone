@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update product_recipes\n set global_measure_unit_id = {{jsnRecipe.formData}}\n\t                    , {{iQty.text}}\n\t\t\t\t\t\t\t\t\t\t\t, {{iRcpeMeasure.selectedOptionValue}} \n\t\t\t\t\t\t\t\t\t\t\t, {{iComments.text}}\n\t\t\t\t\t\t\t\t\t\t\t, {{appsmith.store.user_id}}\n  \t\t\t\t\t\t\t\t\t\t, {{tblProdRcpe.selectedRow.prd_rcpe_uuid }});\n",
+      "body": "update product_recipes\n set ingredient_order = {{jsnRecipe.formData.ingr_ordr}}\n , global_measure_unit_id = {{jsnRecipe.formData.ingr_meas_id}}\n , quantity = {{jsnRecipe.formData.ingr_qty}}\n , comments = {{jsnRecipe.formData.comments}}\n , updated_at = now()\n , updated_by = {{appsmith.store.user_id}}\n where id = uuid_to_bin({{tbl_Recipe.selectedRow.prd_rcpe_uuid }});\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,11 +37,11 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.user_id",
-      "iComments.text",
-      "iQty.text",
-      "iRcpeMeasure.selectedOptionValue",
-      "jsnRecipe.formData",
-      "tblProdRcpe.selectedRow.prd_rcpe_uuid "
+      "jsnRecipe.formData.comments",
+      "jsnRecipe.formData.ingr_meas_id",
+      "jsnRecipe.formData.ingr_ordr",
+      "jsnRecipe.formData.ingr_qty",
+      "tbl_Recipe.selectedRow.prd_rcpe_uuid "
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

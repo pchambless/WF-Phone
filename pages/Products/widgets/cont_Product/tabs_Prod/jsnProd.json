@@ -189,7 +189,7 @@
                 "dataType": "string",
                 "accessor": "editMode",
                 "isVisible": true,
-                "label": "Edit, Add or Delete Product",
+                "label": "Edit, Add, Delete or Return",
                 "serverSideFiltering": false,
                 "originalIdentifier": "customField1",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnProd.sourceData, jsnProd.formData, jsnProd.fieldState)}}",
