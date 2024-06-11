@@ -1,0 +1,10 @@
+update ingredients
+set name = {{jsnIngr.formData.name}}
+, code = {{jsnIngr.formData.code}}
+, account_id = {{appsmith.store.acct_id}}
+, ingredient_type_id = {{sel_Type.selectedOptionValue}} 
+, description = {{jsnIngr.formData.description}}
+, grams_per_ounce = {{jsnIngr.formData.grams_per_ounce}}
+, updated_by = {{appsmith.store.user_id}}
+, updated_at = now()
+where id = {{jsnIngr.formData.id}}
