@@ -1,4 +1,16 @@
 {
+  "appIsExample": false,
+  "appLayout": {
+    "type": "MOBILE"
+  },
+  "applicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    }
+  },
+  "applicationVersion": 2,
+  "color": "#D9E7FF",
+  "icon": "website",
   "pages": [
     {
       "id": "Login",
@@ -33,30 +45,12 @@
       "isDefault": false
     }
   ],
-  "viewMode": false,
-  "appIsExample": false,
-  "unreadCommentThreads": 0,
-  "clonedFromApplicationId": "64ad7946202bab253139dfff",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
   "unpublishedApplicationDetail": {
     "appPositioning": {
       "type": "FIXED"
     }
-  },
-  "color": "#D9E7FF",
-  "icon": "website",
-  "unpublishedAppLayout": {
-    "type": "MOBILE"
-  },
-  "publishedAppLayout": {
-    "type": "MOBILE"
-  },
-  "unpublishedCustomJSLibs": [
-    {
-      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
-    }
-  ],
-  "publishedCustomJSLibs": [],
-  "applicationVersion": 2,
-  "isManualUpdate": false,
-  "deleted": false
+  }
 }

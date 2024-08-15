@@ -1,23 +1,17 @@
 {
+  "gitSyncId": "66045fda95164773a81f43e1_66045fda95164773a81f43f2",
   "unpublishedPage": {
-    "name": "Ingredient Batch",
-    "slug": "ingredient-batch",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 1100,
-          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-          "widgetName": "MainContainer",
-          "topRow": 0,
+          "backgroundColor": "none",
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
           "bottomRow": 750,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
+          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "canExtend": true,
-          "minHeight": 1100,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [
             {
               "key": "borderRadius"
@@ -26,142 +20,27 @@
               "key": "boxShadow"
             }
           ],
+          "dynamicTriggerPathList": [],
           "leftColumn": 0,
+          "minHeight": 1100,
+          "mobileBottomRow": 1100,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
           "positioning": "fixed",
-          "backgroundColor": "none",
           "rightColumn": 1296,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "containerStyle": "none",
           "snapRows": 84,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
           "version": 89,
-          "mobileTopRow": 0,
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Ingredient Batch_jsType.initActive",
-              "name": "jsType.initActive",
-              "collectionId": "Ingredient Batch_jsType",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  storeValue('active', 'Y');\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_vndr_dd",
-              "name": "vndr_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Ingredient Batch_brnd_dd",
-              "name": "brnd_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_ingrType_dd",
-              "name": "ingrType_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_meas_dd",
-              "name": "meas_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Ingredient Batch_ingrBtch_List",
-              "name": "ingrBtch_List",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_ingr.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_ingr_dd",
-              "name": "ingr_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_Type.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Ingredient Batch_ingrBtch_Select",
-              "name": "ingrBtch_Select",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "tbl_Batch.triggeredRow.uuid"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Batch_ingr_Select",
-              "name": "ingr_Select",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_ingr.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Ingredient Batch_ingrBtch_Last",
-              "name": "ingrBtch_Last",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_ingr.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Ingredient Batch",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_66045fda95164773a81f43f2"
+    "name": "Ingredient Batch",
+    "slug": "ingredient-batch"
+  }
 }

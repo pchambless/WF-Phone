@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "619679789c793d1e5ededc08_64186eff7277d31bb37ea804",
+  "id": "Ingredient Batch_jsIngr",
   "unpublishedCollection": {
     "name": "jsIngr",
     "pageId": "Ingredient Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "defaultTab",
@@ -15,10 +15,6 @@
         "name": "editMode",
         "value": "'edit'"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Ingredient Batch_jsIngr",
-  "deleted": false,
-  "gitSyncId": "619679789c793d1e5ededc08_64186eff7277d31bb37ea804"
+    ]
+  }
 }

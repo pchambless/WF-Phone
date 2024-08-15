@@ -1,292 +1,342 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "tabs_Ingr",
-    "isCanvas": true,
-    "dynamicPropertyPathList": [{"key": "tabsObj.tabczmsskxvz0.isVisible"}],
-    "displayName": "Tabs",
-    "iconSVG": "/static/media/icon.74a6d653.svg",
-    "topRow": 4,
-    "bottomRow": 70,
-    "parentRowSpace": 10,
-    "type": "TABS_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "parentColumnSpace": 19.8125,
-    "dynamicTriggerPathList": [{"key": "onTabSelected"}],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "tabsObj.tabczmsskxvz0.isVisible"},
-        {"key": "defaultTab"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"}
-    ],
-    "children": [
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "backgroundColor": "#bbf7d0",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 70,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 620,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
         {
-            "tabId": "tab1",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 490,
-            "widgetName": "Canvas3CopyCopy",
-            "displayName": "Canvas",
-            "topRow": 0,
-            "bottomRow": 620,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": true,
-            "hideCard": true,
-            "shouldScrollContents": false,
-            "minHeight": 490,
-            "useAutoLayout": false,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "positioning": "fixed",
-            "isDisabled": false,
-            "key": "26z6hoowea",
-            "labelTextSize": "0.875rem",
-            "tabName": "Recipes",
-            "rightColumn": 475.5,
-            "detachFromLayout": true,
-            "widgetId": "reuh5imfmi",
-            "isVisible": true,
-            "version": 1,
-            "parentId": "cls50fn9he",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 0,
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+          "key": "borderRadius"
         },
         {
-            "tabId": "tab2",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 620,
-            "widgetName": "Canvas4CopyCopyCopy",
-            "displayName": "Canvas",
-            "topRow": 0,
-            "bottomRow": 620,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": true,
-            "hideCard": true,
-            "shouldScrollContents": false,
-            "minHeight": 620,
-            "useAutoLayout": false,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "positioning": "fixed",
-            "isDisabled": false,
-            "key": "26z6hoowea",
-            "labelTextSize": "0.875rem",
-            "tabName": "Batches",
-            "rightColumn": 475.5,
-            "detachFromLayout": true,
-            "widgetId": "xm0hnadj2y",
-            "isVisible": true,
-            "version": 1,
-            "parentId": "cls50fn9he",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 0,
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-        },
-        {
-            "tabId": "tabr9mhck6zv4",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 911.0000000000001,
-            "widgetName": "Canvas7CopyCopyCopy",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 676,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 650,
-            "useAutoLayout": false,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "positioning": "fixed",
-            "key": "oqbd57ibjf",
-            "labelTextSize": "0.875rem",
-            "tabName": "Batch Trace",
-            "rightColumn": 1248.1875,
-            "detachFromLayout": true,
-            "widgetId": "zlpovlnycq",
-            "containerStyle": "none",
-            "isVisible": true,
-            "version": 1,
-            "parentId": "cls50fn9he",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-        },
-        {
-            "tabId": "tabczmsskxvz0",
-            "mobileBottomRow": 1259.9999999999995,
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "widgetName": "Canvas10Copy",
-            "displayName": "Canvas",
-            "topRow": 0,
-            "bottomRow": 620,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 1356.0000000000002,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "9rbn3ja9h3",
-            "isDeprecated": false,
-            "tabName": "Add/Edit Batch",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "widgetId": "kkkgaygy7h",
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "cls50fn9he",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 0,
-            "responsiveBehavior": "fill",
-            "mobileLeftColumn": 0,
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "flexLayers": [{"children": [{
-                "id": "a3r46bc0jq",
-                "align": "start"
-            }]}]
-        },
-        {
-            "tabId": "tabkp0dn6ty1u",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 660,
-            "widgetName": "Canvas15",
-            "displayName": "Canvas",
-            "topRow": 0,
-            "bottomRow": 620,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 660,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "j2y0t81omt",
-            "isDeprecated": false,
-            "tabName": "Edit Ingredient",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "osgux58ybl",
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "cls50fn9he",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 0,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [{"children": [{
-                "id": "eet09evhnp",
-                "align": "start"
-            }]}]
+          "key": "boxShadow"
         }
-    ],
-    "key": "ada5ene8lo",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "backgroundColor": "#bbf7d0",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "cls50fn9he",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "defaultTab": "{{appsmith.store.tab_Ingr}}",
-    "onTabSelected": "",
-    "shouldShowTabs": true,
-    "tabsObj": {
-        "tabr9mhck6zv4": {
-            "widgetId": "zlpovlnycq",
-            "isDuplicateLabel": false,
-            "index": 2,
-            "id": "tabr9mhck6zv4",
-            "label": "Batch Trace",
-            "isVisible": false
-        },
-        "tabkp0dn6ty1u": {
-            "widgetId": "osgux58ybl",
-            "isDuplicateLabel": false,
-            "index": 3,
-            "id": "tabkp0dn6ty1u",
-            "label": "Edit Ingredient",
-            "isVisible": true
-        },
-        "tab1": {
-            "widgetId": "reuh5imfmi",
-            "isDuplicateLabel": false,
-            "index": 1,
-            "label": "Recipes",
-            "id": "tab1",
-            "isVisible": true
-        },
-        "tabczmsskxvz0": {
-            "widgetId": "kkkgaygy7h",
-            "isDuplicateLabel": false,
-            "index": 4,
-            "id": "tabczmsskxvz0",
-            "label": "Add/Edit Batch",
-            "isVisible": "{{appsmith.store.tab_Ingr === 'Add/Edit Batch' ? true : false}}"
-        },
-        "tab2": {
-            "widgetId": "xm0hnadj2y",
-            "isDuplicateLabel": false,
-            "index": 0,
-            "label": "Batches",
-            "id": "tab2",
-            "isVisible": true
-        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "26z6hoowea",
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 490,
+      "mobileBottomRow": 490,
+      "mobileTopRow": 0,
+      "parentColumnSpace": 1,
+      "parentId": "cls50fn9he",
+      "parentRowSpace": 1,
+      "positioning": "fixed",
+      "renderMode": "CANVAS",
+      "rightColumn": 475.5,
+      "shouldScrollContents": false,
+      "tabId": "tab1",
+      "tabName": "Recipes",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": false,
+      "version": 1,
+      "widgetId": "reuh5imfmi",
+      "widgetName": "Canvas3CopyCopy"
     },
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 3,
-    "parentId": "q6spvi2qzl",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 4,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 70,
-    "minDynamicHeight": 10
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 620,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "26z6hoowea",
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 620,
+      "mobileBottomRow": 620,
+      "mobileTopRow": 0,
+      "parentColumnSpace": 1,
+      "parentId": "cls50fn9he",
+      "parentRowSpace": 1,
+      "positioning": "fixed",
+      "renderMode": "CANVAS",
+      "rightColumn": 475.5,
+      "shouldScrollContents": false,
+      "tabId": "tab2",
+      "tabName": "Batches",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": false,
+      "version": 1,
+      "widgetId": "xm0hnadj2y",
+      "widgetName": "Canvas4CopyCopyCopy"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 676,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "oqbd57ibjf",
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 650,
+      "mobileBottomRow": 911.0000000000001,
+      "mobileTopRow": 1,
+      "parentColumnSpace": 1,
+      "parentId": "cls50fn9he",
+      "parentRowSpace": 1,
+      "positioning": "fixed",
+      "renderMode": "CANVAS",
+      "rightColumn": 1248.1875,
+      "tabId": "tabr9mhck6zv4",
+      "tabName": "Batch Trace",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": false,
+      "version": 1,
+      "widgetId": "zlpovlnycq",
+      "widgetName": "Canvas7CopyCopyCopy"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 620,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "a3r46bc0jq"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "9rbn3ja9h3",
+      "leftColumn": 0,
+      "minHeight": 1356.0000000000002,
+      "minWidth": 450,
+      "mobileBottomRow": 1259.9999999999995,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 0,
+      "parentColumnSpace": 1,
+      "parentId": "cls50fn9he",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabczmsskxvz0",
+      "tabName": "Add/Edit Batch",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "kkkgaygy7h",
+      "widgetName": "Canvas10Copy"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 620,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "eet09evhnp"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "j2y0t81omt",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 660,
+      "minWidth": 450,
+      "mobileBottomRow": 660,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 0,
+      "parentColumnSpace": 1,
+      "parentId": "cls50fn9he",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabkp0dn6ty1u",
+      "tabName": "Edit Ingredient",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "osgux58ybl",
+      "widgetName": "Canvas15"
+    }
+  ],
+  "defaultTab": "{{appsmith.store.tab_Ingr}}",
+  "displayName": "Tabs",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "tabsObj.tabczmsskxvz0.isVisible"
+    },
+    {
+      "key": "defaultTab"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "tabsObj.tabczmsskxvz0.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTabSelected"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.74a6d653.svg",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ada5ene8lo",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "onTabSelected": "",
+  "originalBottomRow": 70,
+  "originalTopRow": 4,
+  "parentColumnSpace": 19.8125,
+  "parentId": "q6spvi2qzl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "shouldScrollContents": true,
+  "shouldShowTabs": true,
+  "tabsObj": {
+    "tab1": {
+      "id": "tab1",
+      "index": 1,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Recipes",
+      "widgetId": "reuh5imfmi"
+    },
+    "tab2": {
+      "id": "tab2",
+      "index": 0,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Batches",
+      "widgetId": "xm0hnadj2y"
+    },
+    "tabczmsskxvz0": {
+      "id": "tabczmsskxvz0",
+      "index": 4,
+      "isDuplicateLabel": false,
+      "isVisible": "{{appsmith.store.tab_Ingr === 'Add/Edit Batch' ? true : false}}",
+      "label": "Add/Edit Batch",
+      "widgetId": "kkkgaygy7h"
+    },
+    "tabkp0dn6ty1u": {
+      "id": "tabkp0dn6ty1u",
+      "index": 3,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Edit Ingredient",
+      "widgetId": "osgux58ybl"
+    },
+    "tabr9mhck6zv4": {
+      "id": "tabr9mhck6zv4",
+      "index": 2,
+      "isDuplicateLabel": false,
+      "isVisible": false,
+      "label": "Batch Trace",
+      "widgetId": "zlpovlnycq"
+    }
+  },
+  "topRow": 4,
+  "type": "TABS_WIDGET",
+  "version": 3,
+  "widgetId": "cls50fn9he",
+  "widgetName": "tabs_Ingr"
 }

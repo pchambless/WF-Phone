@@ -1,328 +1,388 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
-    "iconSVG": "/static/media/icon.7df6f087cceba86a9a5481b6c7f4871d.svg",
-    "onSubmit": "{{jsTask.editModeRun()}}",
-    "topRow": 1,
-    "type": "JSON_FORM_WIDGET",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "boxShadow"},
-        {"key": "submitButtonStyles.buttonColor"},
-        {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.buttonColor"},
-        {"key": "resetButtonStyles.borderRadius"},
-        {"key": "sourceData"},
-        {"key": "schema.__root_schema__.children.task_ordr.defaultValue"},
-        {"key": "schema.__root_schema__.children.task_ordr.accentColor"},
-        {"key": "schema.__root_schema__.children.task_ordr.borderRadius"},
-        {"key": "schema.__root_schema__.children.task_nm.defaultValue"},
-        {"key": "schema.__root_schema__.children.task_nm.accentColor"},
-        {"key": "schema.__root_schema__.children.task_nm.borderRadius"},
-        {"key": "schema.__root_schema__.children.task_desc.defaultValue"},
-        {"key": "schema.__root_schema__.children.task_desc.accentColor"},
-        {"key": "schema.__root_schema__.children.task_desc.borderRadius"},
-        {"key": "schema.__root_schema__.children.task_id.defaultValue"},
-        {"key": "schema.__root_schema__.children.task_id.accentColor"},
-        {"key": "schema.__root_schema__.children.task_id.borderRadius"},
-        {"key": "schema.__root_schema__.defaultValue"},
-        {"key": "schema.__root_schema__.borderRadius"},
-        {"key": "schema.__root_schema__.cellBorderRadius"},
-        {"key": "schema.__root_schema__.children.customField1.borderRadius"},
-        {"key": "schema.__root_schema__.children.customField1.accentColor"},
-        {"key": "title"},
-        {"key": "isVisible"}
-    ],
-    "showReset": false,
-    "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "autoGenerateForm": true,
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "#f4f4f5",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "1.5rem",
+  "borderWidth": "1",
+  "bottomRow": 53,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
     },
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "SECONDARY"
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
     },
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Layout"
-    ],
-    "isLoading": false,
-    "submitButtonLabel": "Submit",
-    "childStylesheet": {
-        "CHECKBOX": {
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.buttonColor"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_ordr.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_ordr.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_ordr.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_nm.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_nm.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_nm.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_desc.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_desc.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_desc.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.task_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "title"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "schema.__root_schema__.children.customField1.onOptionChange"
+    },
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7df6f087cceba86a9a5481b6c7f4871d.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "j241ugu9j9",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 72,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 31,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onSubmit": "{{jsTask.editModeRun()}}",
+  "originalBottomRow": 56,
+  "originalTopRow": 1,
+  "parentColumnSpace": 6.4921875,
+  "parentId": "si7q5qgspk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "SECONDARY"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "accessor": "editMode",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "Edit",
+          "fieldType": "Select",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Edit, Add or Delete Task?",
+          "labelStyle": "BOLD",
+          "labelTextSize": "0.875rem",
+          "onOptionChange": "{{jsTask.editMode()}}",
+          "options": "[\n  {\n    \"label\": \"Edit\",\n    \"value\": \"Edit\"\n  },\n  {\n    \"label\": \"Add\",\n    \"value\": \"Add\"\n  },\n  {\n    \"label\": \"Delete\",\n    \"value\": \"Delete\"\n  },\n  {\n    \"label\": \"Back to Lists\",\n    \"value\": \"Back\"\n  }\n]",
+          "originalIdentifier": "customField1",
+          "position": 0,
+          "serverSideFiltering": false,
+          "sourceData": ""
         },
-        "ARRAY": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
+        "task_desc": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "accessor": "task_desc",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_desc))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "task_desc",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Task Description",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "task_desc",
+          "position": 3,
+          "sourceData": ""
         },
-        "CURRENCY_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+        "task_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "accessor": "task_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_id))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "task_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Task Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "task_id",
+          "position": 4,
+          "sourceData": 48
         },
-        "DATEPICKER": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+        "task_nm": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "accessor": "task_nm",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_nm))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "task_nm",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Task Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "task_nm",
+          "position": 2,
+          "sourceData": ""
         },
-        "PHONE_NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "OBJECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "MULTISELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PASSWORD_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "EMAIL_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "RADIO_GROUP": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SWITCH": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "MULTILINE_TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
+        "task_ordr": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "accessor": "task_ordr",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_ordr))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "task_ordr",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Task Order",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "task_ordr",
+          "position": 1,
+          "sourceData": 60
         }
-    },
-    "disabledWhenInvalid": true,
-    "borderRadius": "1.5rem",
-    "originalBottomRow": 56,
-    "useSourceData": true,
-    "schema": {"__root_schema__": {
-        "labelTextSize": "0.875rem",
-        "identifier": "__root_schema__",
-        "boxShadow": "none",
-        "isRequired": false,
-        "isCustomField": false,
-        "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-        "dataType": "object",
-        "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-        "accessor": "__root_schema__",
-        "isVisible": true,
-        "label": "",
-        "originalIdentifier": "__root_schema__",
-        "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-        "children": {
-            "customField1": {
-                "labelTextSize": "0.875rem",
-                "identifier": "customField1",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": false,
-                "isCustomField": true,
-                "defaultValue": "Edit",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "dataType": "string",
-                "accessor": "editMode",
-                "isVisible": true,
-                "label": "Edit, Add or Delete Task?",
-                "serverSideFiltering": false,
-                "originalIdentifier": "customField1",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "children": {},
-                "options": "[\n  {\n    \"label\": \"Edit\",\n    \"value\": \"Edit\"\n  },\n  {\n    \"label\": \"Add\",\n    \"value\": \"Add\"\n  },\n  {\n    \"label\": \"Delete\",\n    \"value\": \"Delete\"\n  },\n  {\n    \"label\": \"Back to Lists\",\n    \"value\": \"Back\"\n  }\n]",
-                "labelStyle": "BOLD",
-                "onOptionChange": "{{jsTask.editMode()}}",
-                "position": 0,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Select"
-            },
-            "task_nm": {
-                "labelTextSize": "0.875rem",
-                "identifier": "task_nm",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_nm))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "dataType": "string",
-                "accessor": "task_nm",
-                "isVisible": true,
-                "label": "Task Name",
-                "originalIdentifier": "task_nm",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 2,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "task_desc": {
-                "labelTextSize": "0.875rem",
-                "identifier": "task_desc",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_desc))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "dataType": "string",
-                "accessor": "task_desc",
-                "isVisible": true,
-                "label": "Task Description",
-                "originalIdentifier": "task_desc",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 3,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Multiline Text Input"
-            },
-            "task_id": {
-                "labelTextSize": "0.875rem",
-                "identifier": "task_id",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_id))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "dataType": "number",
-                "accessor": "task_id",
-                "isVisible": false,
-                "label": "Task Id",
-                "originalIdentifier": "task_id",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 4,
-                "isDisabled": false,
-                "sourceData": 48,
-                "fieldType": "Number Input"
-            },
-            "task_ordr": {
-                "labelTextSize": "0.875rem",
-                "identifier": "task_ordr",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task_ordr))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "dataType": "number",
-                "accessor": "task_ordr",
-                "isVisible": true,
-                "label": "Task Order",
-                "originalIdentifier": "task_ordr",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 1,
-                "isDisabled": false,
-                "sourceData": 60,
-                "fieldType": "Number Input"
-            }
-        },
-        "position": -1,
-        "isDisabled": false,
-        "sourceData": {
-            "task_nm": "",
-            "task_desc": "",
-            "task_id": "",
-            "task_ordr": ""
-        },
-        "cellBoxShadow": "none",
-        "fieldType": "Object"
-    }},
-    "needsErrorInfo": false,
-    "mobileBottomRow": 72,
-    "widgetName": "jsnTask",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "PRIMARY"
-    },
-    "dynamicPropertyPathList": [
-        {"key": "onSubmit"},
-        {"key": "schema.__root_schema__.children.customField1.onOptionChange"}
-    ],
-    "displayName": "JSON Form",
-    "bottomRow": 53,
-    "fieldLimitExceeded": false,
-    "parentRowSpace": 10,
-    "title": "{{tbl_Tasks.selectedRow.task_nm}}",
-    "hideCard": false,
-    "mobileRightColumn": 25,
-    "parentColumnSpace": 6.4921875,
-    "dynamicTriggerPathList": [
-        {"key": "schema.__root_schema__.children.customField1.onOptionChange"},
-        {"key": "onSubmit"}
-    ],
-    "borderWidth": "1",
-    "sourceData": "{{tbl_Tasks.selectedRow}}",
-    "resetButtonLabel": "Reset",
-    "key": "j241ugu9j9",
-    "backgroundColor": "#f4f4f5",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
-    "widgetId": "dbqvn3vyki",
-    "minWidth": 450,
-    "parentId": "si7q5qgspk",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 31,
-    "scrollContents": true,
-    "responsiveBehavior": "fill",
-    "fixedFooter": true,
-    "originalTopRow": 1,
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(jsnTask.sourceData, jsnTask.formData, jsnTask.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "task_desc": "",
+        "task_id": "",
+        "task_nm": "",
+        "task_ordr": ""
+      }
+    }
+  },
+  "scrollContents": true,
+  "showReset": false,
+  "sourceData": "{{tbl_Tasks.selectedRow}}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY"
+  },
+  "tags": [
+    "Suggested",
+    "Layout"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
+  "title": "{{tbl_Tasks.selectedRow.task_nm}}",
+  "topRow": 1,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": true,
+  "version": 1,
+  "widgetId": "dbqvn3vyki",
+  "widgetName": "jsnTask"
 }

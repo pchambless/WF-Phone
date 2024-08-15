@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6664696488cf8166d347ad0a_0c2c974b-1afc-42b8-96fa-1581f55cebde",
+  "id": "Products_jsTabs",
   "unpublishedCollection": {
     "name": "jsTabs",
     "pageId": "Products",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Products_jsTabs",
-  "deleted": false,
-  "gitSyncId": "6664696488cf8166d347ad0a_0c2c974b-1afc-42b8-96fa-1581f55cebde"
+    "variables": []
+  }
 }

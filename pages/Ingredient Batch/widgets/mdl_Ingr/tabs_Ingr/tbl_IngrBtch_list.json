@@ -1,261 +1,305 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "tbl_IngrBtch_list",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "ingr_btch_nbr",
-        "purch_date",
-        "uuid",
-        "customColumn1"
-    ],
-    "isVisibleDownload": true,
-    "compactMode": "SHORT",
-    "dynamicPropertyPathList": [
-        {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.isCellVisible"}
-    ],
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "displayName": "Table",
-    "topRow": 0,
-    "bottomRow": 60,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "-1",
-    "hideCard": false,
-    "parentColumnSpace": 19.5,
-    "dynamicTriggerPathList": [
-        {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.menuItems.menuItem0ivbtc1g46.onClick"},
-        {"key": "primaryColumns.customColumn1.onClick"}
-    ],
-    "dynamicBindingPathList": [
-        {"key": "primaryColumns.purch_date.computedValue"},
-        {"key": "derivedColumns.customColumn1.menuButtonLabel"},
-        {"key": "primaryColumns.customColumn1.menuButtonLabel"},
-        {"key": "primaryColumns.ingr_btch_nbr.computedValue"},
-        {"key": "tableData"},
-        {"key": "derivedColumns.customColumn1.buttonLabel"},
-        {"key": "primaryColumns.customColumn1.buttonLabel"},
-        {"key": "derivedColumns.customColumn1.isCellVisible"},
-        {"key": "primaryColumns.customColumn1.isCellVisible"},
-        {"key": "accentColor"},
-        {"key": "primaryColumns.uuid.computedValue"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "primaryColumns.customColumn1.menuColor"},
-        {"key": "primaryColumns.customColumn1.borderRadius"},
-        {"key": "primaryColumns.customColumn1.boxShadow"}
-    ],
-    "leftColumn": 0,
-    "delimiter": ",",
-    "primaryColumns": {
-        "purch_date": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.purch_date))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "Purch Date",
-            "inputFormat": "YYYY-MM-DD",
-            "columnType": "date",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "purch_date",
-            "isDisabled": false,
-            "outputFormat": "YYYY-MM-DD",
-            "verticalAlignment": "CENTER"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 60,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "ingr_btch_nbr",
+    "purch_date",
+    "uuid",
+    "customColumn1"
+  ],
+  "columnSizeMap": {
+    "act": 60,
+    "best_by_date": 120,
+    "brnd_name": 177,
+    "customColumn1": 76,
+    "ingr_btch_nbr": 91,
+    "purch_amt": 91,
+    "purch_date": 113,
+    "purch_dtl": 218,
+    "status": 75,
+    "step": 62,
+    "task": 245,
+    "vndr_name": 199
+  },
+  "compactMode": "SHORT",
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "-1",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#03B365",
+      "buttonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( 'Del'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "iconName": "delete",
+      "id": "customColumn1",
+      "index": 6,
+      "isCellVisible": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.prd_btch_cnt === 0))}}",
+      "isCompact": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Del",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( '>'))}}",
+      "menuColor": "#03B365",
+      "menuItems": {
+        "menuItem0ivbtc1g46": {
+          "id": "menuItem0ivbtc1g46",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "widgetId": "i0x080d38k"
         },
-        "ingr_btch_nbr": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.ingr_btch_nbr))}}",
-            "textSize": "0.875rem",
-            "index": 5,
-            "isVisible": true,
-            "label": "Batch",
-            "textColor": "#DD4B34",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "ingr_btch_nbr",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
+        "menuItem9sid05z97f": {
+          "id": "menuItem9sid05z97f",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Edit",
+          "widgetId": "bmd822wbh0"
         },
-        "customColumn1": {
-            "isCompact": true,
-            "boxShadow": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( \"none\"))}}",
-            "computedValue": "",
-            "onClick": "{{ingrBtch_Delete.run(() => ingrBtch_List.run(), () => {})}}",
-            "buttonColor": "#03B365",
-            "enableSort": true,
-            "id": "customColumn1",
-            "isDisabled": false,
-            "buttonLabelColor": "#FFFFFF",
-            "isCellVisible": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.prd_btch_cnt === 0))}}",
-            "isDerived": true,
-            "menuButtonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( '>'))}}",
-            "iconName": "delete",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "menuItems": {
-                "menuItem0ivbtc1g46": {
-                    "onClick": "{{ingrBtch_Delete.run(() => ingrBtch_List.run(), () => showAlert('Delete Not Successful','error'))}}",
-                    "widgetId": "i0x080d38k",
-                    "index": 1,
-                    "id": "menuItem0ivbtc1g46",
-                    "label": "Delete",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemhq38r5cgo4": {
-                    "widgetId": "bp048e5jcc",
-                    "index": 0,
-                    "id": "menuItemhq38r5cgo4",
-                    "label": "Trace Ingredient",
-                    "isDisabled": false,
-                    "isVisible": true
-                }
-            },
-            "index": 6,
-            "isVisible": true,
-            "label": "Del",
-            "labelColor": "#FFFFFF",
-            "buttonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( 'Del'))}}",
-            "columnType": "iconButton",
-            "borderRadius": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-            "menuColor": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( (appsmith.theme.colors.primaryColor)))}}",
-            "width": 150,
-            "enableFilter": true
-        },
-        "uuid": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.uuid))}}",
-            "textSize": "0.875rem",
-            "index": 2,
-            "isVisible": true,
-            "label": "uuid",
-            "textColor": "",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "uuid",
-            "isDisabled": false,
-            "cellBackground": "",
-            "verticalAlignment": "CENTER"
+        "menuItemhq38r5cgo4": {
+          "id": "menuItemhq38r5cgo4",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Trace Ingredient",
+          "widgetId": "bp048e5jcc"
         }
+      },
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "primaryColumns.purch_date.computedValue"
     },
-    "onRowSelected": "{{storeValue('ingrBtchUUID',tbl_IngrBtch_list.selectedRow.ingr_btch_uuid);\nspIngrBtch_trace.run();}}",
-    "key": "eg6wa3rn65",
-    "derivedColumns": {"customColumn1": {
-        "isCellVisible": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.prd_btch_cnt === 0))}}",
-        "isCompact": true,
-        "boxShadow": "none",
-        "isDerived": true,
-        "computedValue": "",
-        "menuButtonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( '>'))}}",
-        "buttonColor": "#03B365",
-        "iconName": "delete",
-        "buttonStyle": "rgb(3, 179, 101)",
-        "menuItems": {
-            "menuItem9sid05z97f": {
-                "widgetId": "bmd822wbh0",
-                "id": "menuItem9sid05z97f",
-                "label": "Edit",
-                "isDisabled": false,
-                "isVisible": true
-            },
-            "menuItem0ivbtc1g46": {
-                "widgetId": "i0x080d38k",
-                "id": "menuItem0ivbtc1g46",
-                "label": "Delete",
-                "isDisabled": false,
-                "isVisible": true
-            },
-            "menuItemhq38r5cgo4": {
-                "widgetId": "bp048e5jcc",
-                "id": "menuItemhq38r5cgo4",
-                "label": "Trace Ingredient",
-                "isDisabled": false,
-                "isVisible": true
-            }
+    {
+      "key": "derivedColumns.customColumn1.menuButtonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuButtonLabel"
+    },
+    {
+      "key": "primaryColumns.ingr_btch_nbr.computedValue"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "derivedColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "primaryColumns.uuid.computedValue"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem0ivbtc1g46.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": false,
+  "isVisibleSearch": true,
+  "key": "eg6wa3rn65",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "onRowSelected": "{{storeValue('ingrBtchUUID',tbl_IngrBtch_list.selectedRow.ingr_btch_uuid);\nspIngrBtch_trace.run();}}",
+  "parentColumnSpace": 19.5,
+  "parentId": "xm0hnadj2y",
+  "parentRowSpace": 10,
+  "primaryColumnId": "ingr_btch_uuid",
+  "primaryColumns": {
+    "customColumn1": {
+      "borderRadius": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( \"none\"))}}",
+      "buttonColor": "#03B365",
+      "buttonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( 'Del'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "iconName": "delete",
+      "id": "customColumn1",
+      "index": 6,
+      "isCellVisible": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.prd_btch_cnt === 0))}}",
+      "isCompact": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Del",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( '>'))}}",
+      "menuColor": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuItems": {
+        "menuItem0ivbtc1g46": {
+          "id": "menuItem0ivbtc1g46",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "{{ingrBtch_Delete.run(() => ingrBtch_List.run(), () => showAlert('Delete Not Successful','error'))}}",
+          "widgetId": "i0x080d38k"
         },
-        "index": 6,
-        "isVisible": true,
-        "label": "Del",
-        "labelColor": "#FFFFFF",
-        "buttonLabel": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( 'Del'))}}",
-        "columnType": "iconButton",
-        "borderRadius": "0px",
-        "menuColor": "#03B365",
-        "width": 150,
-        "enableFilter": true,
-        "enableSort": true,
-        "id": "customColumn1",
-        "isDisabled": false,
-        "buttonLabelColor": "#FFFFFF"
-    }},
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "textSize": "0.875rem",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "rytb9b68bu",
-    "isVisibleFilters": true,
-    "tableData": "{{ingrBtch_List.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "xm0hnadj2y",
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+        "menuItemhq38r5cgo4": {
+          "id": "menuItemhq38r5cgo4",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Trace Ingredient",
+          "widgetId": "bp048e5jcc"
         }
+      },
+      "onClick": "{{ingrBtch_Delete.run(() => ingrBtch_List.run(), () => {})}}",
+      "width": 150
     },
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "isVisiblePagination": false,
-    "primaryColumnId": "ingr_btch_uuid",
-    "columnSizeMap": {
-        "task": 245,
-        "purch_date": 113,
-        "act": 60,
-        "vndr_name": 199,
-        "purch_dtl": 218,
-        "best_by_date": 120,
-        "ingr_btch_nbr": 91,
-        "step": 62,
-        "customColumn1": 76,
-        "brnd_name": 177,
-        "purch_amt": 91,
-        "status": 75
+    "ingr_btch_nbr": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.ingr_btch_nbr))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "ingr_btch_nbr",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Batch",
+      "textColor": "#DD4B34",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
     },
-    "verticalAlignment": "CENTER"
+    "purch_date": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "date",
+      "computedValue": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.purch_date))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "purch_date",
+      "index": 1,
+      "inputFormat": "YYYY-MM-DD",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Purch Date",
+      "outputFormat": "YYYY-MM-DD",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "uuid": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tbl_IngrBtch_list.sanitizedTableData.map((currentRow) => ( currentRow.uuid))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "uuid",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "uuid",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchKey": "",
+  "tableData": "{{ingrBtch_List.data}}",
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "rytb9b68bu",
+  "widgetName": "tbl_IngrBtch_list"
 }

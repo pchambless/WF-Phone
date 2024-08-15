@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "619679789c793d1e5ededc08_623cc437eb981f3433746b51",
+  "id": "Product Batch_jsWorksheet",
   "unpublishedCollection": {
     "name": "jsWorksheet",
     "pageId": "Product Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product Batch_jsWorksheet",
-  "deleted": false,
-  "gitSyncId": "619679789c793d1e5ededc08_623cc437eb981f3433746b51"
+    "variables": []
+  }
 }

@@ -1,46 +1,58 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 53.199999999999996,
-    "widgetName": "IconVendor",
-    "onClick": "{{storeValue('addVndrBrnd','Vendor')}}/",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "borderRadius"},
-        {"key": "onClick"}
-    ],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634a.svg",
-    "topRow": 16,
-    "bottomRow": 20,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 10.534979423868313,
-    "animateLoading": true,
-    "parentColumnSpace": 7.583587646484375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 29,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "isDisabled": false,
-    "key": "kepkbfhn22",
-    "flexVerticalAlignment": "end",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 31,
-    "iconName": "plus",
-    "widgetId": "mkeg5gql6b",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "jomdy8e9x3",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 49.199999999999996,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "buttonVariant": "PRIMARY",
-    "alignment": "start"
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "flexVerticalAlignment": "end",
+  "hideCard": false,
+  "iconName": "plus",
+  "iconSVG": "/static/media/icon.1a0c634a.svg",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kepkbfhn22",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 29,
+  "minWidth": 50,
+  "mobileBottomRow": 53.199999999999996,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10.534979423868313,
+  "mobileTopRow": 49.199999999999996,
+  "onClick": "{{storeValue('addVndrBrnd','Vendor')}}/",
+  "parentColumnSpace": 7.583587646484375,
+  "parentId": "jomdy8e9x3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 31,
+  "topRow": 16,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "mkeg5gql6b",
+  "widgetName": "IconVendor"
 }

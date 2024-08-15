@@ -1,183 +1,209 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "tblIngrRecipesCopyCopy",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "prd_type",
-        "prd_name",
-        "prd_desc",
-        "prd_type_id",
-        "prd_id"
-    ],
-    "isVisibleDownload": true,
-    "compactMode": "SHORT",
-    "dynamicPropertyPathList": [{"key": "onRowSelected"}],
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "displayName": "Table",
-    "topRow": 0,
-    "bottomRow": 47,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "0",
-    "hideCard": false,
-    "parentColumnSpace": 19.5,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
-    "dynamicBindingPathList": [
-        {"key": "tableData"},
-        {"key": "primaryColumns.prd_type.computedValue"},
-        {"key": "primaryColumns.prd_name.computedValue"},
-        {"key": "primaryColumns.prd_desc.computedValue"},
-        {"key": "primaryColumns.prd_type_id.computedValue"},
-        {"key": "primaryColumns.prd_id.computedValue"},
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"}
-    ],
-    "leftColumn": 0,
-    "delimiter": ",",
-    "primaryColumns": {
-        "prd_name": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_name))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "prd_name",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "prd_name",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "prd_desc": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_desc))}}",
-            "textSize": "0.875rem",
-            "index": 2,
-            "isVisible": true,
-            "label": "prd_desc",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "prd_desc",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "prd_type_id": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_type_id))}}",
-            "textSize": "0.875rem",
-            "index": 3,
-            "isVisible": false,
-            "label": "prd_type_id",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "prd_type_id",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "prd_type": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_type))}}",
-            "textSize": "0.875rem",
-            "index": 0,
-            "isVisible": true,
-            "label": "prd_type",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "prd_type",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "prd_id": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_id))}}",
-            "textSize": "0.875rem",
-            "index": 4,
-            "isVisible": false,
-            "label": "prd_id",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "prd_id",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 47,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "onRowSelected": "{{storeValue('prdTypeID','currentRow.prd_type_id');\nstoreValue('prdID','currentRow.prd_id')}}",
-    "key": "eg6wa3rn65",
-    "derivedColumns": {},
-    "labelTextSize": "0.875rem",
-    "rightColumn": 64,
-    "textSize": "0.875rem",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "n799dp6g06",
-    "isVisibleFilters": true,
-    "tableData": "{{f_IngrRcpe_list.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "reuh5imfmi",
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "isVisiblePagination": true,
-    "columnSizeMap": {
-        "task": 245,
-        "prd_name": 226,
-        "step": 62,
-        "customColumn1": 65.99999999999999,
-        "status": 75
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "prd_type",
+    "prd_name",
+    "prd_desc",
+    "prd_type_id",
+    "prd_id"
+  ],
+  "columnSizeMap": {
+    "customColumn1": 65.99999999999999,
+    "prd_name": 226,
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "compactMode": "SHORT",
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {},
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
     },
-    "verticalAlignment": "CENTER"
+    {
+      "key": "primaryColumns.prd_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.prd_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.prd_desc.computedValue"
+    },
+    {
+      "key": "primaryColumns.prd_type_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.prd_id.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "eg6wa3rn65",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "onRowSelected": "{{storeValue('prdTypeID','currentRow.prd_type_id');\nstoreValue('prdID','currentRow.prd_id')}}",
+  "parentColumnSpace": 19.5,
+  "parentId": "reuh5imfmi",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "prd_desc": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_desc))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "prd_desc",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "prd_desc",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "prd_id": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "prd_id",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "prd_id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "prd_name": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "prd_name",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "prd_name",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "prd_type": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_type))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "prd_type",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "prd_type",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "prd_type_id": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{tblIngrRecipesCopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.prd_type_id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "prd_type_id",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "prd_type_id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchKey": "",
+  "tableData": "{{f_IngrRcpe_list.data}}",
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "n799dp6g06",
+  "widgetName": "tblIngrRecipesCopyCopy"
 }

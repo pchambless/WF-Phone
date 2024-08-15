@@ -1,46 +1,58 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 65.39999999999999,
-    "widgetName": "IconBrand",
-    "onClick": "{{storeValue('addVndrBrnd','Brand')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "borderRadius"},
-        {"key": "onClick"}
-    ],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634a.svg",
-    "topRow": 16,
-    "bottomRow": 20,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 10.534979423868313,
-    "animateLoading": true,
-    "parentColumnSpace": 7.583587646484375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 60,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "isDisabled": false,
-    "key": "kepkbfhn22",
-    "flexVerticalAlignment": "end",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 62,
-    "iconName": "plus",
-    "widgetId": "mbm09ufmxj",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "jomdy8e9x3",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 61.39999999999999,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "buttonVariant": "PRIMARY",
-    "alignment": "start"
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "flexVerticalAlignment": "end",
+  "hideCard": false,
+  "iconName": "plus",
+  "iconSVG": "/static/media/icon.1a0c634a.svg",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kepkbfhn22",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 60,
+  "minWidth": 50,
+  "mobileBottomRow": 65.39999999999999,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10.534979423868313,
+  "mobileTopRow": 61.39999999999999,
+  "onClick": "{{storeValue('addVndrBrnd','Brand')}}",
+  "parentColumnSpace": 7.583587646484375,
+  "parentId": "jomdy8e9x3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "topRow": 16,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "mbm09ufmxj",
+  "widgetName": "IconBrand"
 }

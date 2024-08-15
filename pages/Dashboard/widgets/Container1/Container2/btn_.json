@@ -1,80 +1,96 @@
 {
-    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-    "widgetName": "btn_",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [{"key": "groupButtons.groupButtonkspk9xhq3z.onClick"}],
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.d6773218.svg",
-    "topRow": 4,
-    "bottomRow": 15,
-    "parentRowSpace": 10,
-    "groupButtons": {
-        "groupButtony2p92s0l1d": {
-            "itemType": "BUTTON",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#f4f4f5",
-            "widgetId": "dktf1btan8",
-            "buttonVariant": "filled",
-            "menuItems": {},
-            "index": 2,
-            "id": "groupButtony2p92s0l1d",
-            "label": "Shopping (Maybe Later)",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{navigateTo('Ingredient Batch', {});}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#fee2e2",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Ingredient Batch",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{navigateTo('Product Batch', {});}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#86efac",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Product Batch",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 15,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButtonkspk9xhq3z.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "type": "BUTTON_GROUP_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 2.8125,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
-    "key": "ksc8rutbji",
-    "labelTextSize": "0.875rem",
-    "orientation": "vertical",
-    "rightColumn": 64,
-    "widgetId": "nkz214dth1",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "p6a74v1s4y",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 16,
-    "borderRadius": "1.5rem",
-    "originalBottomRow": 27,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#fee2e2",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Ingredient Batch",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Ingredient Batch', {});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#86efac",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Product Batch",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Product Batch', {});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtony2p92s0l1d": {
+      "buttonColor": "#f4f4f5",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "id": "groupButtony2p92s0l1d",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Shopping (Maybe Later)",
+      "menuItems": {},
+      "placement": "CENTER",
+      "widgetId": "dktf1btan8"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.d6773218.svg",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ksc8rutbji",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "orientation": "vertical",
+  "originalBottomRow": 27,
+  "originalTopRow": 16,
+  "parentColumnSpace": 2.8125,
+  "parentId": "p6a74v1s4y",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 4,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "nkz214dth1",
+  "widgetName": "btn_"
 }

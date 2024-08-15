@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "66045fda95164773a81f43e1_3415fb14-abff-451d-ac58-ae824d624eb6",
+  "id": "Product Batch_jsRecipe",
   "unpublishedCollection": {
     "name": "jsRecipe",
     "pageId": "Product Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product Batch_jsRecipe",
-  "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_3415fb14-abff-451d-ac58-ae824d624eb6"
+    "variables": []
+  }
 }
